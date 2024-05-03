@@ -14,6 +14,10 @@ module.exports = {
       padding: "1rem",
     },
 
+    fontFamily: {
+      'playfair': ['var(--playfair-display)']
+    },
+
     screens: {
       xs: "450px",
       // => @media (min-width: 450px) { ... }

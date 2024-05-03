@@ -6,11 +6,40 @@
 
 @layer base {
   body {
-    font-family: "Inter", sans-serif;
+    @apply bg-green-900;
   }
 }
 
 @layer components {
+  .content-bg {
+    @apply bg-slate-50 py-12;
+    margin-top: 200px;
+    transform: matrix(1, -0.2, 0, 1, 0, 0);
+  }
+
+  .content-wrap {
+    transform: matrix(1, 0.2, 0, 1, 0, 0);
+  }
+
+  .title-wrap {
+    /* margin-top: -5vw; */
+    @apply grid grid-cols-2 md:grid-cols-3;
+    @apply pb-8 lg:pb-16 xl:pb-20 mt-[-2vw];
+
+    .title {
+      @apply col-start-2 md:col-start-3;
+      @apply font-playfair text-emerald-900;
+
+      h1 {
+        @apply text-3xl font-medium uppercase
+      }
+
+      h3 {
+        @apply text-xl font-normal uppercase
+      }
+    }
+  }
+
   input[type="checkbox"]:checked ~ label span svg {
     @apply inline-flex;
   }
