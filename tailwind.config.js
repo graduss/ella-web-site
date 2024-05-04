@@ -44,17 +44,11 @@ module.exports = {
         white: "#FFFFFF",
         black: "#121723",
         dark: "#1D2430",
-        primary: "#4A6CF7",
+        primary: colors.emerald["900"],
         yellow: "#FBB040",
-        "bg-color-dark": "#171C28",
-        "body-color": {
-          DEFAULT: "#788293",
-          dark: "#959CB1",
-        },
-        stroke: {
-          stroke: "#E3E8EF",
-          dark: "#353943",
-        },
+        "bg-color-dark": colors.green["900"],
+        "body-color": colors.green["900"],
+        stroke: "#E3E8EF",
         gray: {
           ...colors.gray,
           dark: "#1E232E",

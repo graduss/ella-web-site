@@ -1,0 +1,29 @@
+.headerWrap {
+    @apply absolute left-0 top-0 z-40 flex w-full items-center;
+}
+
+.sticky {
+    @apply fixed z-[1] bg-primary !bg-opacity-85 shadow-sticky backdrop-blur-sm transition;
+}
+
+.navWrap {
+    @apply flex w-full items-center justify-center px-4
+}
+
+.navButton {
+    @apply absolute right-4 top-1/2 block translate-y-[-50%] rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden;
+}
+
+.line {
+    @apply relative my-1.5 block h-0.5 w-[30px] transition-all duration-300 bg-white
+}
+
+.navbar {
+    @apply absolute right-0 z-30 w-[250px] rounded border-[.5px] border-black/50 bg-primary px-6 py-4 duration-300 bg-opacity-95;
+    @apply lg:!visible lg:!opacity-100 lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0;
+}
+
+.submenu {
+    @apply relative z-[1] left-0 top-full rounded-sm bg-opacity-0 bg-primary transition-[top] duration-300 ;
+    @apply lg:invisible lg:absolute lg:w-[250px] lg:top-[110%] lg:p-4 lg:opacity-0 lg:shadow-lg lg:border-black/50 lg:border-[.5px] lg:bg-opacity-95;
+}

@@ -1,10 +1,9 @@
 "use client";
 
 // import Footer from "@/components/Footer";
-// import Header from "@/components/Header";
+import { Header } from "@/components/Header";
 // import ScrollToTop from "@/components/ScrollToTop";
 import { Roboto, Playfair_Display } from "next/font/google";
-import "node_modules/react-modal-video/css/modal-video.css";
 import "../styles/index.css";
 
 const roboto = Roboto({ weight: ["700", "400", "500"], style: ["normal", "italic"], subsets: ["latin"] });
@@ -24,6 +23,7 @@ export default function RootLayout({
       <head />
 
       <body className={`${roboto.className} ${playfairDisplay.variable}`}>
+        <Header />
         <div className="content-bg">
           <div className="content-wrap">
             <div className="container">
