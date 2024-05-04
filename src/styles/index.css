@@ -11,8 +11,7 @@
 
 @layer components {
   .content-bg {
-    @apply bg-slate-50 py-12;
-    margin-top: 200px;
+    @apply bg-slate-50 pt-12 pb-24 my-[200px];
     transform: matrix(1, -0.1, 0, 1, 0, 0);
   }
 

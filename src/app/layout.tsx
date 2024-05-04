@@ -1,6 +1,6 @@
 "use client";
 
-// import Footer from "@/components/Footer";
+import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 // import ScrollToTop from "@/components/ScrollToTop";
 import { Roboto, Playfair_Display } from "next/font/google";
@@ -24,6 +24,7 @@ export default function RootLayout({
 
       <body className={`${roboto.className} ${playfairDisplay.variable}`}>
         <Header />
+
         <div className="content-bg">
           <div className="content-wrap">
             <div className="container">
@@ -31,9 +32,8 @@ export default function RootLayout({
             </div>
           </div>
         </div>
-          {/* <Header /> */}
           
-          {/* <Footer /> */}
+        <Footer />
           {/* <ScrollToTop /> */}
       </body>
     </html>
