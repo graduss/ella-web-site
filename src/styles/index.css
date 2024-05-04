@@ -20,10 +20,10 @@
     transform: matrix(1, 0.1, 0, 1, 0, 0);
   }
 
-  .title-wrap {
+  .page-title {
     /* margin-top: -5vw; */
     @apply grid grid-cols-2 md:grid-cols-3;
-    @apply pb-8 lg:pb-16 xl:pb-20 mt-[-2vw];
+    @apply pb-6;
 
     .title {
       @apply col-start-2 md:col-start-3;

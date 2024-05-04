@@ -18,7 +18,7 @@ const Header = () => {
   // Sticky Navbar
   const [sticky, setSticky] = useState(false);
   const handleStickyNavbar = () => {
-    if (window.scrollY >= 10) {
+    if (window.scrollY >= 30) {
       console.log(20)
       setSticky(true);
     } else {

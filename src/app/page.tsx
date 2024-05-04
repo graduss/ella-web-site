@@ -20,6 +20,12 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
+      <div className="page-title">
+        <div className="title">
+          <h1>title</h1>
+          <h3>sub title</h3>
+        </div>
+      </div>
       <main>
         <p>
           Mariusz Mosiołek i Partnerzy Kancelaria Adwokatów i Radców Prawnych SKA jest jedną z wiodących kancelarii prawnych w Warszawie świadczących usługi doradztwa prawnego. Jesteśmy dynamicznie rozwijającą się kancelarią wyspecjalizowaną w zakresie pełnej i kompleksowej obsługi prawnej podmiotów gospodarczych polskich i zagranicznych. Swoją działalność opieramy przede wszystkim na specjalizacji prawników wchodzących w skład naszego zespołu, który chętnie podejmuje się prowadzenia spraw o charakterze nowatorskim, wymagających podejścia strategicznego w szczególnym wymiarze, tych uznawanych za trudne, wymagających wiedzy interdyscyplinarnej.

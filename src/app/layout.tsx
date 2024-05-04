@@ -27,12 +27,6 @@ export default function RootLayout({
         <div className="content-bg">
           <div className="content-wrap">
             <div className="container">
-              <div className="title-wrap">
-                <div className="title">
-                  <h1>title</h1>
-                  <h3>sub title</h3>
-                </div>
-              </div>
               {children}
             </div>
           </div>
