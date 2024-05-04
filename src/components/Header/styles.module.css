@@ -1,5 +1,6 @@
 .headerWrap {
     @apply absolute left-0 top-0 z-40 flex w-full items-center;
+    @apply bg-gradient-to-b from-primary to-primary/0
 }
 
 .sticky {
