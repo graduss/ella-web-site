@@ -20,11 +20,11 @@
 }
 
 .navbar {
-    @apply absolute right-0 z-30 w-[250px] rounded border-[.5px] border-black/50 bg-primary px-6 py-4 duration-300 bg-opacity-95;
+    @apply absolute right-0 z-10 w-[250px] rounded-md border-[.5px] border-black/50 bg-primary px-6 py-4 duration-300 bg-opacity-95;
     @apply lg:!visible lg:!opacity-100 lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0;
 }
 
 .submenu {
-    @apply relative z-[1] left-0 top-full rounded-sm bg-opacity-0 bg-primary transition-[top] duration-300 ;
+    @apply relative z-[1] left-0 top-full rounded-md bg-opacity-0 bg-primary transition-[top] duration-300 ;
     @apply lg:invisible lg:absolute lg:w-[250px] lg:top-[110%] lg:p-4 lg:opacity-0 lg:shadow-lg lg:border-black/50 lg:border-[.5px] lg:bg-opacity-95;
 }
