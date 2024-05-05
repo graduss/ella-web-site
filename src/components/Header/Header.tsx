@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import cm from 'classnames';
 import menuData from "./menuData";
@@ -42,6 +43,8 @@ const Header = () => {
   };
 
   const usePathName = usePathname();
+
+  const t = useTranslations("header")
 
   return (
     <>
@@ -113,7 +116,7 @@ const Header = () => {
                                 : "text-white/70 hover:text-white"
                             }`}
                           >
-                            {menuItem.title}
+                            {t(menuItem.title)}
                           </Link>
                         ) : (
                           <>

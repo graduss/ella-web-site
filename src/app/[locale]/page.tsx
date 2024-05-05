@@ -9,6 +9,7 @@ import Hero from "@/components/Hero";
 import Pricing from "@/components/Pricing";
 import Testimonials from "@/components/Testimonials";
 import { Metadata } from "next";
+import { useTranslations } from "next-intl";
 
 export const metadata: Metadata = {
   title: "Free Next.js Template for Startup and SaaS",
@@ -17,11 +18,13 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+  const t = useTranslations();
+
   return (
     <>
       <div className="page-title">
         <div className="title">
-          <h1>title</h1>
+          <h1>{t("home")}</h1>
           <h3>sub title</h3>
         </div>
       </div>
