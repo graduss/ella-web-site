@@ -4,14 +4,15 @@ import createNextIntlPlugin from 'next-intl/plugin';
 const nextConfig = {
   images: {
     domains: ["localhost"],
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "cdn.sanity.io",
-        port: "",
-      },
-    ],
+    // remotePatterns: [
+    //   {
+    //     protocol: "https",
+    //     hostname: "cdn.sanity.io",
+    //     port: "",
+    //   },
+    // ],
   },
+  output: "standalone",
 };
 
 const withNextIntl = createNextIntlPlugin();
