@@ -1,6 +1,6 @@
 export const LocaleConfig = {
-    locales: ["en", "ru", "pl"],
-    defaultLocale: "en",
+    locales: ["ru", "pl"],
+    defaultLocale: "ru",
 }
 
 export async function getMessages(locale: typeof LocaleConfig.locales[number]) {

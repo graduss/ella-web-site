@@ -18,8 +18,8 @@ const FooterLinksSection:FC<TLinksSection> = ({ className, title, links }) => {
       <div className="mb-12 lg:mb-16">
         {title && (<h2 className={style.links_title}>{title}</h2>)}
         <ul>
-          {links.map((item) => (
-            <li key={item.href}>
+          {links.map((item, ind) => (
+            <li key={ind}>
               <Link className={style.links} href={item.href}>{item.label}</Link>
             </li>
           ))}

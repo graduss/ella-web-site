@@ -12,12 +12,14 @@
     "classnames": "^2.5.1",
     "eslint": "^8.56.0",
     "eslint-config-next": "^14.1.0",
+    "lodash": "^4.17.21",
     "next": "^14.1.0",
     "next-intl": "^3.12.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@types/lodash": "^4.17.1",
     "@types/node": "^20.8.9",
     "@types/react": "^18.2.33",
     "autoprefixer": "^10.4.17",
