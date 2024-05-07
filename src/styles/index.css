@@ -9,6 +9,15 @@
 }
 
 @layer components {
+  .page {
+    p, ul {
+      @apply mb-4;
+    }
+
+    li {
+      @apply ml-4 pl-4 list-disc;
+    }
+  }
   .content-bg {
     @apply bg-slate-50 pt-12 pb-24 my-[200px];
     transform: matrix(1, -0.1, 0, 1, 0, 0);
@@ -22,18 +31,26 @@
     /* margin-top: -5vw; */
     @apply grid grid-cols-2 md:grid-cols-3;
     @apply pb-6;
+  }
 
-    .title {
-      @apply col-start-2 md:col-start-3;
-      @apply font-playfair text-primary;
+  .title {
+    @apply col-start-2 md:col-start-3;
+    @apply font-playfair text-primary;
 
-      h1 {
-        @apply text-3xl font-medium uppercase
-      }
+    h1 {
+      @apply text-3xl font-medium uppercase
+    }
 
-      h3 {
-        @apply text-xl font-normal uppercase
-      }
+    h2 {
+      @apply text-2xl font-medium uppercase
+    }
+
+    h3 {
+      @apply text-xl font-normal uppercase
+    }
+
+    h4 {
+      @apply text-base font-normal uppercase
     }
   }
 

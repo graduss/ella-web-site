@@ -1,0 +1,11 @@
+.serviceList {
+    @apply grid grid-cols-1 md:grid-cols-3 gap-4 mt-4;
+}
+
+.curd {
+    @apply flex flex-col items-center;
+
+    img {
+        @apply w-[130px];
+    }
+}

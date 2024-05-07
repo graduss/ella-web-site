@@ -1,13 +1,4 @@
-import AboutSectionOne from "@/components/About/AboutSectionOne";
-import AboutSectionTwo from "@/components/About/AboutSectionTwo";
-import Blog from "@/components/Blog";
-import Brands from "@/components/Brands";
-import ScrollUp from "@/components/Common/ScrollUp";
-import Contact from "@/components/Contact";
-import Features from "@/components/Features";
-import Hero from "@/components/Hero";
-import Pricing from "@/components/Pricing";
-import Testimonials from "@/components/Testimonials";
+import ServiceList from "@/components/servicies/ServicieList";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -22,33 +13,47 @@ export default function Home() {
     <>
       <div className="page-title">
         <div className="title">
-          <h1>Home</h1>
-          <h3>sub title</h3>
+          <h1>О нас</h1>
         </div>
       </div>
-      <main>
+      <main className="page">
         <p>
-          Mariusz Mosiołek i Partnerzy Kancelaria Adwokatów i Radców Prawnych SKA jest jedną z wiodących kancelarii prawnych w Warszawie świadczących usługi doradztwa prawnego. Jesteśmy dynamicznie rozwijającą się kancelarią wyspecjalizowaną w zakresie pełnej i kompleksowej obsługi prawnej podmiotów gospodarczych polskich i zagranicznych. Swoją działalność opieramy przede wszystkim na specjalizacji prawników wchodzących w skład naszego zespołu, który chętnie podejmuje się prowadzenia spraw o charakterze nowatorskim, wymagających podejścia strategicznego w szczególnym wymiarze, tych uznawanych za trudne, wymagających wiedzy interdyscyplinarnej.
-        </p><p>
-          Zespół Kancelarii to nie tylko specjaliści w określonych dziedzinach prawa, ale również doradcy wspomagający złożone procesy gospodarcze, posiadający kompleksową wiedzę fachową oraz duże doświadczenie praktyczne. Dzięki temu, świadczone przez Nas usługi łączą najwyższej jakości wiedzę prawniczą przy jednoczesnej znajomości potrzeb biznesu. Klienci doceniają nasze doświadczenie, odpowiedzialność oraz profesjonalizm. Śmiało wychodzimy poza utarte schematy, co umożliwia skuteczne i kreatywne rozwiązywanie nietypowych problemów.
-
-Posiadamy doświadczenie zawodowe w pracy zarówno z dużymi spółkami – liderami w swojej branży, w tym ze spółkami Skarbu Państwa, z instytucjami samorządowymi, jak i ze średnimi i małymi firmami oraz indywidualnymi przedsiębiorcami. Duże doświadczenie w prowadzeniu sporów sądowych i reprezentacji Klientów przed Krajową Izbą Odwoławczą ugruntowało pozycję Kancelarii na rynku usług prawniczych.
-
-Kancelaria świadczy usługi w języku polskim oraz w języku angielskim.
-
-Biuro kancelarii mieści się na Żoliborzu w Warszawie.
+          Наша команда уже более 15 лет занимается экспортным бизнесом между западом и востоком,
+          Мы объединились и создали сообщество профессионалов в своей области.
+          Команда менеджеров, юристов и логистов, сделают свою работу на высоком уровне для Вашего спокойствия и развития бизнеса.
         </p>
+        Наша команда это:
+        <ul>
+          <li>Экспорт-менеджер по парфюмерно-косметической продукции</li>
+          <li>Экспорт-менеджер медицинско-фармацевтической отрасли</li>
+          <li>Юрист</li>
+          <li>Таможенный брокер</li>
+          <li>Логист</li>
+          <li>Специалист по сертификации и документации</li>
+          <li>Маркетолог–аналитик</li>
+        </ul>
+        <p>
+          Компания КМ работает  на формировании бизнес- сообщества между Западным и Восточным рынкам.
+        </p>
+        Наша специализация:
+        <ul>
+          <li>Изделия медицинского назначения</li>
+          <li>Лекарственные средства</li>
+          <li>Эстетическая медицина</li>
+          <li>Биологически активные добавки</li>
+          <li>Косметика</li>
+          <li>Парфюмерия</li>
+          <li>СТМ</li>
+        </ul>
+
+        <section>
+          <div className="title text-center">
+            <h2>Направление</h2>
+          </div>
+
+          <ServiceList />
+        </section>
       </main>
-      {/* <ScrollUp />
-      <Hero />
-      <Features />
-      <Brands />
-      <AboutSectionOne />
-      <AboutSectionTwo />
-      <Testimonials />
-      <Pricing />
-      <Blog />
-      <Contact /> */}
     </>
   );
 }
