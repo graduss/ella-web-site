@@ -4,6 +4,7 @@ export type TServiseItem = {
     path:  string;
     icon: string;
 };
+
 export const serviceLirt: TServiseItem[] = [
     {
         id: 1,
