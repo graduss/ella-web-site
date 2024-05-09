@@ -9,7 +9,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const ServiceItem:FC<TServiseItem> = ({ title, path, icon }) => {
 
     return (
-        <Link className={style.curd} href={path}>
+        <Link
+            className={style.curd}
+            href={ { pathname: "/service/[...slug]", params: { slug: [ path ] } } }
+        >
             <div>
                 <FontAwesomeIcon className={style.icon} icon={icon as IconProp} />
             </div>
