@@ -3,9 +3,18 @@
 }
 
 .curd {
-    @apply flex flex-col items-center;
+    @apply flex flex-col items-center p-8 bg-neutral-100 rounded;
+    &:hover {
+        path {
+            @apply fill-primary;
+        }
+    }
+}
 
-    img {
-        @apply w-[130px];
+.icon {
+    //width: 40px;
+    @apply w-16 pb-4;
+    path {
+        @apply fill-black;
     }
 }

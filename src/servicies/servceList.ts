@@ -1,40 +1,39 @@
-import { UrlObject } from "url";
-
 export type TServiseItem = {
     id: number;
     title: string;
     path:  string;
-    imageSrc: string;
+    icon: string;
 };
+
 export const serviceLirt: TServiseItem[] = [
     {
         id: 1,
         title: "Поиск товарной категории",
         path: "/service/product_search",
-        imageSrc: "/images/servicies/search.png",
+        icon: "fa-solid fa-magnifying-glass",
     },
     {
         id: 2,
         title: "Маркетинг аналитика",
         path: "/service/marketing_analytics",
-        imageSrc: "/images/servicies/analitics.png",
+        icon: "fa-solid fa-chart-pie",
     },
     {
         id: 3,
         title: "Логистика",
         path: "/service/logistics",
-        imageSrc: "/images/servicies/ligistics.png",
+        icon: "fa-solid fa-truck-fast",
     },
     {
         id: 4,
         title: "Регистрация сертификация",
         path: "/service/registration_certification",
-        imageSrc: "/images/servicies/registration.png",
+        icon: "fa-solid fa-vial-circle-check",
     },
     {
         id: 5,
         title: "Документы",
         path: "/service/documentation",
-        imageSrc: "/images/servicies/documents.png",
+        icon: "fa-solid fa-file-signature",
     }
 ];

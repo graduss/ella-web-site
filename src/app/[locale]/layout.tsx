@@ -7,9 +7,24 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { LocaleConfig } from "@/locales";
 
+import { library } from '@fortawesome/fontawesome-svg-core';
+import {
+  faVialCircleCheck,
+  faMagnifyingGlass,
+  faChartPie,
+  faTruckFast,
+  faFileSignature
+} from '@fortawesome/free-solid-svg-icons';
+
+library.add(
+  faVialCircleCheck,
+  faMagnifyingGlass,
+  faChartPie,
+  faTruckFast,
+  faFileSignature
+);
+
 import "@/styles/index.css";
-
-
 
 const roboto = Roboto({ weight: ["700", "400", "500"], style: ["normal", "italic"], subsets: ["latin"] });
 const playfairDisplay = Playfair_Display({ subsets: ["latin"], weight: ["400", "500"], variable: "--playfair-display" })

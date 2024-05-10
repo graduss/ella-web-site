@@ -1,15 +1,17 @@
 import { TServiseItem } from "@/servicies";
 import { Link } from "@/locales";
 import { FC } from "react";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 import style from "./style.module.scss"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const ServiceItem:FC<TServiseItem> = ({ title, imageSrc, path }) => {
+const ServiceItem:FC<TServiseItem> = ({ title, path, icon }) => {
 
     return (
         <Link className={style.curd} href={path}>
             <div>
-                <img src={imageSrc} alt={title} />
+                <FontAwesomeIcon className={style.icon} icon={icon as IconProp} />
             </div>
             <label className="title text-center mt-4">
                 <h4>{title}</h4>

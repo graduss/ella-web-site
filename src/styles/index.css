@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-cover bg-no-repeat bg-[url(/images/bg-image.jpg)] bg-center bg-fixed;
+    @apply bg-cover bg-no-repeat bg-[url(/images/bg-image.jpg)] bg-center bg-fixed text-black;
   }
 }
 
