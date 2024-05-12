@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import cm from 'classnames';
 import menuData from "./menuData";
 
-import style from './styles.module.css'
+import style from './styles.module.css';
 
 const Header = () => {
   // Navbar toggle
@@ -100,7 +100,7 @@ const Header = () => {
                   id="navbarCollapse"
                   className={`${style.navbar} ${
                     navbarOpen
-                      ? "visibility top-full opacity-100"
+                      ? "visibility top-full opacity-10import {ComponentProps} from 'react';0"
                       : "invisible top-[120%] opacity-0"
                   }`}
                 >
@@ -109,6 +109,7 @@ const Header = () => {
                       <li key={index} className="group relative">
                         {menuItem.path ? (
                           <Link
+                            // @ts-ignore: Unreachable code error
                             href={menuItem.path}
                             className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
                               usePathName === menuItem.path
@@ -143,6 +144,7 @@ const Header = () => {
                             >
                               {menuItem.submenu.map((submenuItem, index) => (
                                 <Link
+                                  // @ts-ignore: Unreachable code error
                                   href={submenuItem.path}
                                   key={index}
                                   className="block rounded py-2.5 text-sm text-white/70 hover:text-white lg:px-3"
