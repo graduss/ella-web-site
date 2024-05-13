@@ -42,7 +42,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: graduss/ella-web-site:${{ steps.package-version.outputs.current-version }}
+          tags: graduss/ella-web-site:${{ steps.package-version.outputs.current-version }}, graduss/ella-web-site:stage
   deploy:
     needs: docker-image
     runs-on: ubuntu-latest
@@ -59,6 +59,6 @@ jobs:
           script: |
             docker stop ella
             docker rm ella
-            docker pull graduss/ella-web-site:${{ steps.package-version.outputs.current-version }}
-            docker run --name=ella -p 3000:3000 -d graduss/ella-web-site:${{ steps.package-version.outputs.current-version }}
+            docker pull graduss/ella-web-site:stage
+            docker run --name=ella -p 3000:3000 -d graduss/ella-web-site:stage
 
