@@ -64,10 +64,10 @@ const Header = () => {
                 } `}
               >
                 <Image
-                  src="/images/logo/logo-2.svg"
+                  src="/images/logo/logo4.png"
                   alt="logo"
-                  width={140}
-                  height={30}
+                  width={379}
+                  height={129}
                   className="w-full"
                 />
               </Link>
