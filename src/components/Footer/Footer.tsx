@@ -1,11 +1,11 @@
 "use client";
 import { FC } from "react";
-import Image from "next/image";
 import Link from "next/link";
 
 import { TFLinks, terms, usefulLinks } from './footerMenuData';
 
 import style from "./style.module.css";
+import Logo from "../Logo/Logo";
 
 type TLinksSection = {
   className: string;
@@ -38,13 +38,7 @@ const Footer = () => {
             <div className="w-full lg:w-1/2">
               <div className="mb-8 max-w-[360px] lg:mb-16">
                 <Link href="/" className="mb-8 inline-block">
-                  <Image
-                    src="/images/logo/logo4.png"
-                    alt="logo"
-                    className=" w-full"
-                    width={379}
-                    height={126}
-                  />
+                  <Logo />
                 </Link>
                 <p className="mb-9 text-base leading-relaxed text-white dark:text-body-color-dark">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.

@@ -1,11 +1,11 @@
 "use client";
-import Image from "next/image";
 import { Link } from "@/locales";
 import { usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import cm from 'classnames';
 import menuData from "./menuData";
+import Logo from "../Logo/Logo";
 
 import style from './styles.module.css';
 
@@ -56,20 +56,12 @@ const Header = () => {
       >
         <div className="container">
           <div className="relative -mx-4 flex items-center justify-between">
-            <div className="w-60 max-w-full px-4 xl:mr-12">
+            <div className="max-w-full px-4 xl:mr-12">
               <Link
                 href="/"
-                className={`header-logo block w-full ${
-                  sticky ? "py-10" : "py-10"
-                } `}
+                className={`header-logo block w-full py-4`}
               >
-                <Image
-                  src="/images/logo/logo4.png"
-                  alt="logo"
-                  width={379}
-                  height={129}
-                  className="w-full"
-                />
+                <Logo />
               </Link>
             </div>
             <div className={style.navWrap}>
