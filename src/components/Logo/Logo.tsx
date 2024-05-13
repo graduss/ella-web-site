@@ -9,7 +9,7 @@ const Logo = () => (
       alt="logo"
       width={180}
       height={180}
-      className="w-full"
+      className={style.image}
     />
     <div className={style.logoName}>
       <strong>ConstMax</strong>
