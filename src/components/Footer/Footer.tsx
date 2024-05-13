@@ -3,6 +3,7 @@ import { FC } from "react";
 import Link from "next/link";
 
 import { TFLinks, terms, usefulLinks } from './footerMenuData';
+import { version } from "@/servicies";
 
 import style from "./style.module.css";
 import Logo from "../Logo/Logo";
@@ -55,7 +56,7 @@ const Footer = () => {
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-8">
             <p className="text-center text-base text-white">
-              &copy; Aliaksandr Zhyburtovich 2024
+              &copy; Aliaksandr Zhyburtovich 2024 &nbsp; <em className="text-gray-400">v{version}</em>
             </p>
           </div>
         </div>
