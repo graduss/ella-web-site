@@ -43,3 +43,22 @@ jobs:
         with:
           push: true
           tags: graduss/ella-web-site:${{ steps.package-version.outputs.current-version }}
+  deploy:
+    needs: docker-image
+    runs-on: ubuntu-latest
+    steps:
+      - name: get-npm-version
+        id: package-version
+        uses: martinbeentjes/npm-get-version-action@v1.3.1
+      - name: connet to stage
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.STAGE_HOST }}
+          username: ${{ secrets.STAGE_USER }}
+          key: ${{ secrets.KEY }}
+          script: |
+            docker stop ella
+            docker rm ella
+            docker pull graduss/ella-web-site:${{ steps.package-version.outputs.current-version }}
+            docker run --name=ella -p 3000:3000 -d graduss/ella-web-site:${{ steps.package-version.outputs.current-version }}
+
