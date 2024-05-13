@@ -21,4 +21,4 @@ jobs:
       - run: npm version patch -m "[skip actions] Set v%s"
       - run: VERSION=$(node -p "require('./package.json').version")
       - run: git tag ${VERSION}
-      - run: git push origin --tags
+      - run: git push origin --follow-tags
