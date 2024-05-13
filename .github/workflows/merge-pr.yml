@@ -34,10 +34,12 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-      - run: VERSION=$(node -p "require('./package.json').version")
+      - name: get-npm-version
+        id: package-version
+        uses: martinbeentjes/npm-get-version-action@v1.3.1
       - name: Build and push Docker image
         id: push
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: graduss/ella-web-site:${VERSION}
+          tags: graduss/ella-web-site:${{ steps.package-version.outputs.current-version }}
