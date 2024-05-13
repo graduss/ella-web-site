@@ -2,6 +2,10 @@
   @apply flex flex-nowrap items-center gap-1;
 }
 
+.image {
+  @apply w-[90px]
+}
+
 .logoName {
   @apply flex flex-col items-start;
 
