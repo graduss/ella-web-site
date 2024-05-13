@@ -39,11 +39,11 @@ const Footer = () => {
               <div className="mb-8 max-w-[360px] lg:mb-16">
                 <Link href="/" className="mb-8 inline-block">
                   <Image
-                    src="/images/logo/logo-2.svg"
+                    src="/images/logo/logo4.png"
                     alt="logo"
                     className=" w-full"
-                    width={140}
-                    height={30}
+                    width={379}
+                    height={126}
                   />
                 </Link>
                 <p className="mb-9 text-base leading-relaxed text-white dark:text-body-color-dark">
