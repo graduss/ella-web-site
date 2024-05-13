@@ -23,7 +23,7 @@ jobs:
       - run: git tag ${VERSION}
       - run: git push origin --follow-tags
   docker-image:
-    needs: update-version:
+    needs: update-version
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
