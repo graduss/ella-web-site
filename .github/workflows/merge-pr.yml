@@ -57,8 +57,8 @@ jobs:
           username: ${{ secrets.STAGE_USER }}
           key: ${{ secrets.KEY }}
           script: |
+            docker pull graduss/ella-web-site:stage
             docker stop ella
             docker rm ella
-            docker pull graduss/ella-web-site:stage
             docker run --name=ella -p 3000:3000 --env-file=.env -d graduss/ella-web-site:stage
 
