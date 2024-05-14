@@ -11,7 +11,7 @@ const ServiceItem:FC<TServiseItem> = ({ title, path, icon }) => {
     return (
         <Link
             className={style.curd}
-            href={ { pathname: "/service/[name]", params: { name: path } } }
+            href={ path }
         >
             <div>
                 <FontAwesomeIcon className={style.icon} icon={icon as IconProp} />

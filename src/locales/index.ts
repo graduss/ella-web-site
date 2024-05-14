@@ -17,7 +17,14 @@ export async function getMessages(locale: typeof LocaleConfig.locales[number]) {
 
 export const pathnames = {
     "/": "/",
-    "/service/[name]": "/service/[name]"
+    "/#about": '/#about',
+    "/#product_search": "/#product_search",
+    "/#marketing_analytics": "/#marketing_analytics",
+    "/#logistics": "/#logistics",
+    "/#registration_certification": "/#registration_certification",
+    "/#documentation": "/#documentation",
+    "/#contacts": "/#contacts"
+    
 } satisfies Pathnames<typeof LocaleConfig.locales>;
 
 export const {Link, redirect, usePathname, useRouter} = createLocalizedPathnamesNavigation({locales: LocaleConfig.locales, pathnames});
