@@ -13,7 +13,12 @@ import {
   faMagnifyingGlass,
   faChartPie,
   faTruckFast,
-  faFileSignature
+  faFileSignature,
+  faCircleCheck,
+  faRightLong,
+  faAt,
+  faPhone,
+  faLocationDot
 } from '@fortawesome/free-solid-svg-icons';
 
 library.add(
@@ -21,7 +26,12 @@ library.add(
   faMagnifyingGlass,
   faChartPie,
   faTruckFast,
-  faFileSignature
+  faFileSignature,
+  faCircleCheck,
+  faRightLong,
+  faAt,
+  faPhone,
+  faLocationDot
 );
 
 import "@/styles/index.css";
