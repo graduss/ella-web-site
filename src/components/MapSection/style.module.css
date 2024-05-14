@@ -1,0 +1,3 @@
+.mapArea iframe {
+  @apply w-full h-[400px] lg:h-[500px];
+}
