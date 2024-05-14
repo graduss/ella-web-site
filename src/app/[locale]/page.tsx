@@ -28,7 +28,7 @@ export default function Home() {
   return (
     <>
       <div className={style.pageTitle}>
-        <div className={style.title}>
+        <div id="about" className={style.title}>
           <h1>О нас</h1>
         </div>
       </div>
@@ -107,7 +107,7 @@ export default function Home() {
 
         <section className={style.areas}>
           <article className={style.areaItem}>
-            <div className={style.title}>
+            <div id="product_search" className={style.title}>
               <h2>Поиск товарной категории</h2>
             </div>
             <label>Экспорт-менеджер парфюмерно-косметического направления</label>
@@ -128,7 +128,7 @@ export default function Home() {
           </article>
 
           <article className={style.areaItem}>
-            <div className={style.title}>
+            <div id="marketing_analytics" className={style.title}>
               <h2>Маркетолог-аналитик</h2>
             </div>
             <ul>
@@ -141,7 +141,7 @@ export default function Home() {
           </article>
 
           <article className={style.areaItem}>
-            <div className={style.title}>
+            <div id="registration_certification" className={style.title}>
               <h2>Регистрация Сертификация</h2>
             </div>
             <ul>
@@ -155,7 +155,7 @@ export default function Home() {
           </article>
 
           <article className={style.areaItem}>
-            <div className={style.title}>
+            <div id="logistics" className={style.title}>
               <h2>Логистика</h2>
             </div>
             <ul>
@@ -166,7 +166,7 @@ export default function Home() {
           </article>
 
           <article className={style.areaItem}>
-            <div className={style.title}>
+            <div id="documentation" className={style.title}>
               <h2>Документы</h2>
             </div>
             <ul>
@@ -178,7 +178,7 @@ export default function Home() {
         </section>
 
         <section className={style.contacts}>
-          <div className={style.title}>
+          <div id="contacts" className={style.title}>
             <h2>Нашы контакты</h2>
           </div>
 

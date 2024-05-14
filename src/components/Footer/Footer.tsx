@@ -43,7 +43,6 @@ const Footer = () => {
                 </Link>
                 <p className="mb-9 text-base leading-relaxed text-white dark:text-body-color-dark">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer lobortis.
                 </p>
               </div>
             </div>
