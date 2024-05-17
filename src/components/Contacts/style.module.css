@@ -1,0 +1,11 @@
+.contacts {
+  @apply flex flex-col gap-2;
+}
+
+.contacts li {
+  @apply list-none flex items-center gap-4 px-0 mx-0;
+}
+
+.contacts li svg {
+  @apply w-[1rem] shrink-0
+}

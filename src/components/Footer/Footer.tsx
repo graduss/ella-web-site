@@ -1,27 +1,29 @@
-"use client";
 import { FC } from "react";
-import Link from "next/link";
+import { Link } from "@/locales";
+import { useTranslations } from "next-intl";
 
-import { TFLinks, terms, usefulLinks } from './footerMenuData';
+import { TFLinks, usefulLinks } from './footerMenuData';
 import { version } from "@/servicies";
 
 import style from "./style.module.css";
 import Logo from "../Logo/Logo";
+import Contacts from "../Contacts/Contacts";
 
 type TLinksSection = {
-  className: string;
+  className?: string;
   title?: string;
   links: TFLinks[];
 }
-const FooterLinksSection:FC<TLinksSection> = ({ className, title, links }) => {
+const FooterLinksSection: FC<TLinksSection> = ({ className, title, links }) => {
+  const t = useTranslations('header');
   return (
     <div className={className}>
-      <div className="mb-12 lg:mb-16">
+      <div className="">
         {title && (<h2 className={style.links_title}>{title}</h2>)}
         <ul>
           {links.map((item, ind) => (
             <li key={ind}>
-              <Link className={style.links} href={item.href}>{item.label}</Link>
+              <Link className={style.links} href={item.href}>{t(item.label)}</Link>
             </li>
           ))}
         </ul>
@@ -30,14 +32,30 @@ const FooterLinksSection:FC<TLinksSection> = ({ className, title, links }) => {
   )
 }
 
+type TFooterContacs = {
+  className?: string,
+  title?: string
+}
+
+const FooterContacs: FC<TFooterContacs> = ({ className, title }) => (
+  <div className={className}>
+    <div className="">
+      {title && (<h2 className={style.links_title}>{title}</h2>)}
+      <Contacts />
+    </div>
+  </div>
+);
+
 const Footer = () => {
+  const t = useTranslations('header');
+
   return (
     <>
       <footer className={style.footer}>
         <div className="container">
-          <div className="flex flex-wrap gap-12">
-            <div className="w-full lg:w-1/2">
-              <div className="mb-8 max-w-[360px] lg:mb-16">
+          <div className="flex flex-wrap gap-8 mb-8 lg:gap-12 lg:mb-12 lg:flex-nowrap">
+            <div className="grow">
+              <div className="max-w-[360px]">
                 <Link href="/" className="mb-8 inline-block">
                   <Logo />
                 </Link>
@@ -47,9 +65,8 @@ const Footer = () => {
               </div>
             </div>
 
-            <FooterLinksSection className="" title="Useful Links" links={ usefulLinks } />
-
-            <FooterLinksSection className="" title="Terms" links={ terms } />
+            <FooterLinksSection title={t('Services')} links={usefulLinks} />
+            <FooterContacs className={style.contacts} title={t('Contacts')} />
           </div>
 
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
