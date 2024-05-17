@@ -1,4 +1,4 @@
-name: Merge PR
+name: Merged PR to develop
 
 on:
   pull_request:
