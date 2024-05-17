@@ -1,0 +1,20 @@
+.logo {
+  @apply flex flex-nowrap items-center gap-1;
+}
+
+.image {
+  @apply w-[75px]
+}
+
+.logoName {
+  @apply flex flex-col items-start;
+
+  strong {
+    @apply text-nowrap text-sky-400 text-3xl underline drop-shadow-[-1px_1px_3px_rgba(0,0,0,0.7)];
+  }
+
+  label {
+    @apply text-nowrap text-slate-300 drop-shadow-md;
+  }
+
+}

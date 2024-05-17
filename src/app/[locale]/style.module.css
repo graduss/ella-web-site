@@ -1,0 +1,58 @@
+.pageTitle {
+  @apply grid grid-cols-2 md:grid-cols-3;
+  @apply pb-6;
+}
+
+.title {
+  @apply col-start-2 md:col-start-3;
+  @apply font-playfair text-primary text-center;
+
+  &:after {
+    content: '';
+    @apply bg-gradient-to-r from-primary/0 via-primary to-primary/0 h-[1px] block mt-1;
+  }
+}
+
+.title h1 {
+  @apply text-3xl font-medium uppercase
+}
+
+.title h2 {
+  @apply text-2xl font-medium uppercase
+}
+
+.title h3 {
+  @apply text-xl font-normal uppercase
+}
+
+.title h4 {
+  @apply text-base font-normal uppercase
+}
+
+.aboutArticals {
+  @apply mt-4;
+  @apply lg:grid lg:grid-cols-3 gap-4;
+}
+
+.title {
+  @apply pt-[116px] mt-[-100px] mb-4;
+}
+
+.aboutArticals li,
+.areas li {
+  @apply list-none flex items-center gap-4 px-0 mx-0 py-1;
+}
+
+.aboutArticals li svg,
+.areas li svg,
+.contacts li svg {
+  @apply w-[1rem] shrink-0
+}
+
+.areas {
+  @apply mt-8 lg:grid lg:grid-cols-2 gap-4
+}
+
+.contacts svg path {
+  @apply fill-sky-600
+}

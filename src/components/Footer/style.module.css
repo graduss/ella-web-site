@@ -1,5 +1,5 @@
 .footer {
-    @apply relative z-10 bg-primary/85 pt-16 md:pt-20 lg:pt-24;
+    @apply relative z-10 bg-primary/85 pt-12 md:pt-20;
 }
 
 .links_title {
@@ -8,4 +8,16 @@
 
 .links {
     @apply mb-2 inline-block text-base text-white/70 hover:text-white duration-300;
+}
+
+.contacts {
+    @apply text-base text-white/70
+}
+
+.contacts li a {
+    @apply hover:text-white;
+}
+
+.contacts svg {
+    @apply text-sky-400;
 }

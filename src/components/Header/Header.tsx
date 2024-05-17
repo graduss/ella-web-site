@@ -1,12 +1,13 @@
 "use client";
-import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/locales";
 import { usePathname } from "next/navigation";
+import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import cm from 'classnames';
 import menuData from "./menuData";
+import Logo from "../Logo/Logo";
 
-import style from './styles.module.css'
+import style from './styles.module.css';
 
 const Header = () => {
   // Navbar toggle
@@ -43,6 +44,8 @@ const Header = () => {
 
   const usePathName = usePathname();
 
+  const t = useTranslations('header');
+
   return (
     <>
       <header
@@ -53,20 +56,12 @@ const Header = () => {
       >
         <div className="container">
           <div className="relative -mx-4 flex items-center justify-between">
-            <div className="w-60 max-w-full px-4 xl:mr-12">
+            <div className="max-w-full px-4 xl:mr-12">
               <Link
                 href="/"
-                className={`header-logo block w-full ${
-                  sticky ? "py-10" : "py-10"
-                } `}
+                className={`header-logo block w-full py-4`}
               >
-                <Image
-                  src="/images/logo/logo-2.svg"
-                  alt="logo"
-                  width={140}
-                  height={30}
-                  className="w-full"
-                />
+                <Logo />
               </Link>
             </div>
             <div className={style.navWrap}>
@@ -97,7 +92,7 @@ const Header = () => {
                   id="navbarCollapse"
                   className={`${style.navbar} ${
                     navbarOpen
-                      ? "visibility top-full opacity-100"
+                      ? "visibility top-full opacity-10import {ComponentProps} from 'react';0"
                       : "invisible top-[120%] opacity-0"
                   }`}
                 >
@@ -106,6 +101,7 @@ const Header = () => {
                       <li key={index} className="group relative">
                         {menuItem.path ? (
                           <Link
+                            // @ts-ignore: Unreachable code error
                             href={menuItem.path}
                             className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
                               usePathName === menuItem.path
@@ -113,7 +109,7 @@ const Header = () => {
                                 : "text-white/70 hover:text-white"
                             }`}
                           >
-                            {menuItem.title}
+                            {t(menuItem.title)}
                           </Link>
                         ) : (
                           <>
@@ -121,7 +117,7 @@ const Header = () => {
                               onClick={() => handleSubmenu(index)}
                               className="flex cursor-pointer items-center justify-between py-2 text-base text-white/70 group-hover:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
                             >
-                              {menuItem.title}
+                              {t(menuItem.title)}
                               <span className="pl-3">
                                 <svg width="25" height="24" viewBox="0 0 25 24">
                                   <path
@@ -140,11 +136,12 @@ const Header = () => {
                             >
                               {menuItem.submenu.map((submenuItem, index) => (
                                 <Link
+                                  // @ts-ignore: Unreachable code error
                                   href={submenuItem.path}
                                   key={index}
                                   className="block rounded py-2.5 text-sm text-white/70 hover:text-white lg:px-3"
                                 >
-                                  {submenuItem.title}
+                                  {t(submenuItem.title)}
                                 </Link>
                               ))}
                             </div>
