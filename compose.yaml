@@ -1,0 +1,29 @@
+services:
+  nextjs:
+    image: graduss/ella-web-site:latest
+    container_name: ella-live
+    restart: always
+    env_file:
+      - path: ./.env
+        required: true
+    networks:
+      - live
+
+  nginx:
+    image: nginx:latest
+    container_name: ndinx-server
+    volumes:
+#      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/conf.d:/etc/nginx/conf.d:ro
+    ports:
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - nextjs
+    restart: always
+    networks:
+      - live
+
+networks:
+    live:
+      driver: bridge

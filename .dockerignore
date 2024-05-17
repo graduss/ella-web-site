@@ -1,0 +1,14 @@
+.next/
+node_modules/
+Dockerfile
+.dockerignore
+.git
+.gitignore
+systemctl/
+.husky/
+.github/
+.eslintrc.json
+.nvmrc
+.prettierrc
+compose.yaml
+nginx
