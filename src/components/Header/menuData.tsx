@@ -5,14 +5,20 @@ const menuData: Menu[] = [
   {
     id: 1,
     title: "About",
-    path: "/",
+    path: "/#about",
     newTab: false,
   },
   {
     id: 2,
-    title: "servicies",
+    title: "Services",
     newTab: false,
-    submenu: serviceLirt.map(item => ({...item, newTab: false, path: {pathname: "/service/[name]", params: {name: item.path} } })),
+    submenu: serviceLirt.map(item => ({ ...item, newTab: false })),
   },
+  {
+    id: 3,
+    title: "Contacts",
+    newTab: false,
+    path: "/#contacts"
+  }
 ];
 export default menuData;

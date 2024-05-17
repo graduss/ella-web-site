@@ -117,7 +117,7 @@ const Header = () => {
                               onClick={() => handleSubmenu(index)}
                               className="flex cursor-pointer items-center justify-between py-2 text-base text-white/70 group-hover:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
                             >
-                              {menuItem.title}
+                              {t(menuItem.title)}
                               <span className="pl-3">
                                 <svg width="25" height="24" viewBox="0 0 25 24">
                                   <path
@@ -141,7 +141,7 @@ const Header = () => {
                                   key={index}
                                   className="block rounded py-2.5 text-sm text-white/70 hover:text-white lg:px-3"
                                 >
-                                  {submenuItem.title}
+                                  {t(submenuItem.title)}
                                 </Link>
                               ))}
                             </div>
