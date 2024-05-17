@@ -41,6 +41,7 @@ jobs:
         id: push
         uses: docker/build-push-action@v5
         with:
+          context: .
           push: true
           tags: graduss/ella-web-site:${{ steps.package-version.outputs.current-version }}, graduss/ella-web-site:stage
   deploy:
