@@ -1,27 +1,19 @@
 import { Metadata } from "next";
-import { FC } from "react";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import ServiceList from "@/components/servicies/ServicieList";
 
-import style from "./style.module.css"
-import Link from "next/link";
+import style from "./style.module.css";
+
+import { Li } from "@/components/Common";
 import MapSection from "@/components/MapSection/MapSection";
+import Contacts from "@/components/Contacts/Contacts";
 
 
 export const metadata: Metadata = {
   title: "Free Next.js Template for Startup and SaaS",
   description: "This is Home for Startup Nextjs Template",
 };
-
-const Li:FC<{children: React.ReactNode, icon?: IconProp}> = ({children, icon}) => (
-  <li><FontAwesomeIcon icon={ icon } /> {children}</li>
-);
-
-Li.defaultProps = {
-  icon: "fa-solid fa-circle-check" as IconProp
-}
 
 export default function Home() {
 
@@ -184,11 +176,7 @@ export default function Home() {
 
           <MapSection address="ul. Szosa Chełmińska 105, 87-100 Toruń, Polska" />
 
-          <ul className="mt-8">
-            <Li icon={"fa-solid fa-at" as IconProp}><Link href="mailto:const-max@gmail.com">const-max@gmail.com</Link></Li>
-            <Li icon={"fa-solid fa-phone" as IconProp}><Link href="tel:+48734029305">(+48) 734-029-305</Link></Li>
-            <Li icon={"fa-solid fa-location-dot" as IconProp}>ul. Szosa Chełmińska 105, 87-100 Toruń, Polska</Li>
-          </ul>
+          <Contacts className="mt-8" />
         </section>
       </main>
     </>

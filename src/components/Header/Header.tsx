@@ -44,7 +44,7 @@ const Header = () => {
 
   const usePathName = usePathname();
 
-  const t = useTranslations('header')
+  const t = useTranslations('header');
 
   return (
     <>
