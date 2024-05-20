@@ -27,5 +27,8 @@ export const pathnames = {
     
 } satisfies Pathnames<typeof LocaleConfig.locales>;
 
-export const {Link, redirect, usePathname, useRouter} = createLocalizedPathnamesNavigation({locales: LocaleConfig.locales, pathnames});
+export const {Link, redirect, usePathname, useRouter} = createLocalizedPathnamesNavigation({
+    locales: LocaleConfig.locales,
+    pathnames: pathnames as typeof pathnames & Record<string & {}, string>
+});
 export type TLinkHref = ComponentProps<typeof Link>["href"];
