@@ -1,4 +1,3 @@
-import { Metadata } from "next";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 import ServiceList from "@/components/servicies/ServicieList";
@@ -8,12 +7,6 @@ import style from "./style.module.css";
 import { Li } from "@/components/Common";
 import MapSection from "@/components/MapSection/MapSection";
 import Contacts from "@/components/Contacts/Contacts";
-
-
-export const metadata: Metadata = {
-  title: "Free Next.js Template for Startup and SaaS",
-  description: "This is Home for Startup Nextjs Template",
-};
 
 export default function Home() {
 
