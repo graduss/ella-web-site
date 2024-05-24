@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { NextIntlClientProvider, useMessages } from 'next-intl';
 import { Roboto, Playfair_Display } from "next/font/google";
+import { GoogleAnalytics } from '@next/third-parties/google';
 import pick from 'lodash/pick';
 
 import { redirect } from 'next/navigation';
@@ -78,6 +79,7 @@ export default function RootLayout({
             
           <Footer />
         </body>
+        <GoogleAnalytics gaId="G-06ZRH0WWKD" />
     </html>
   );
 }
