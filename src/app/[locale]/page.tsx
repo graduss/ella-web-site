@@ -171,7 +171,7 @@ export default function Home() {
 
         <section className={style.contacts}>
           <div id="contacts" className={style.title}>
-            <h2>Нашы контакты</h2>
+            <h2>Наши контакты</h2>
           </div>
 
           <MapSection address="ul. Szosa Chełmińska 105, 87-100 Toruń, Polska" />
