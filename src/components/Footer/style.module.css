@@ -21,3 +21,7 @@
 .contacts svg {
     @apply text-sky-400;
 }
+
+.footer em a {
+    @apply hover:underline
+}
