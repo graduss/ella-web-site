@@ -18,7 +18,7 @@ jobs:
           token: ${{ secrets.ACCESS_TOKEN }}
       - run: git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
       - run: git config user.name "$GITHUB_ACTOR"
-      - run: npm version patch -m "[skip actions] Set v%s"
+      - run: npm version patch -m "Set v%s"
       - run: VERSION=$(node -p "require('./package.json').version")
       - run: git tag ${VERSION}
       - run: git push origin --follow-tags
