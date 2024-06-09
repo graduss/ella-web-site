@@ -10,9 +10,13 @@ export const LocaleConfig = {
 }
 
 export async function getMessages(locale: typeof LocaleConfig.locales[number]) {
-    return {
-        header: (await import(`../components/Header/locales/${locale}.json`)).default
-    }
+    return Object.assign(
+        {},
+        (await import(`../messages/${locale}.json`)).default,
+        {
+            header: (await import(`../components/Header/locales/${locale}.json`)).default
+        }
+    );
 }
 
 export const pathnames = {
@@ -23,7 +27,8 @@ export const pathnames = {
     "/#logistics": "/#logistics",
     "/#registration_certification": "/#registration_certification",
     "/#documentation": "/#documentation",
-    "/#contacts": "/#contacts"
+    "/#contacts": "/#contacts",
+    "/privacy": "/privacy"
     
 } satisfies Pathnames<typeof LocaleConfig.locales>;
 

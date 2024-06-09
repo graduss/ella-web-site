@@ -1,13 +1,13 @@
-import { Metadata } from "next";
+import { Metadata } from 'next';
 import { NextIntlClientProvider, useMessages } from 'next-intl';
-import { Roboto, Playfair_Display } from "next/font/google";
+import { Roboto, Playfair_Display } from 'next/font/google';
 import { GoogleAnalytics } from '@next/third-parties/google';
 import pick from 'lodash/pick';
 
 import { redirect } from 'next/navigation';
 
-import { Footer } from "@/components/Footer";
-import { Header } from "@/components/Header";
+import { Footer } from '@/components/Footer';
+import { Header } from '@/components/Header';
 import { LocaleConfig } from "@/locales";
 
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -79,7 +79,7 @@ export default function RootLayout({
             
           <Footer />
         </body>
-        <GoogleAnalytics gaId="G-06ZRH0WWKD" />
+        { process.env.GOOGLE_ID && <GoogleAnalytics gaId={process.env.GOOGLE_ID} /> }
     </html>
   );
 }
