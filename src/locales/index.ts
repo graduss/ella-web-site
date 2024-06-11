@@ -5,8 +5,8 @@ import {
 import {ComponentProps} from 'react';
 
 export const LocaleConfig = {
-    locales: ["ru", "pl"],
-    defaultLocale: "ru",
+    locales: ["ru", "en"],
+    defaultLocale: "en",
 }
 
 export async function getMessages(locale: typeof LocaleConfig.locales[number]) {
@@ -28,7 +28,7 @@ export const pathnames = {
     "/#registration_certification": "/#registration_certification",
     "/#documentation": "/#documentation",
     "/#contacts": "/#contacts",
-    "/privacy": "/privacy"
+    "/privacy": "/privacy",
     
 } satisfies Pathnames<typeof LocaleConfig.locales>;
 

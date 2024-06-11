@@ -1,8 +1,12 @@
-import Privacy from "@/components/Privacy/Privacy";
+import { PrivacyRU } from "@/components/Privacy";
 import { useTranslations } from "next-intl";
 import { FC } from "react";
+import { LocaleConfig } from "@/locales"
 
-const PrivacyPage: FC = () => {
+const PrivacyPage: FC<{
+  params: { locale: typeof LocaleConfig.locales[number] }
+}> = ({params: {locale}}) => {
+  console.log(locale);
   const t = useTranslations('privacy');
   return (<>
     <div className="pageTitle">
@@ -11,7 +15,9 @@ const PrivacyPage: FC = () => {
       </div>
     </div>
     <main className="page">
-      <Privacy />
+      {{
+        ru: <PrivacyRU />
+      }[locale]}
     </main>
   </>);
 }

@@ -81,7 +81,7 @@ const Footer = () => {
             <p className="text-center text-base text-white">
               &copy; ConstMax 2024. &nbsp;
               <em className="text-gray-400 text-nowrap">
-                Разработан 
+                {t('Devloped by')}&nbsp;
                 <Link target="_blank"  href={"https://www.linkedin.com/in/azhyburtovich/"}>Aliaksandr Zhyburtovich</Link>
                 &nbsp;v{version}
               </em>

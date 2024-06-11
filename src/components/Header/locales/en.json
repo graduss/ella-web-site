@@ -1,7 +1,14 @@
 {
     "Home": "Home",
     "About": "About",
-    "Blog": "Blog",
-    "Support": "Support",
-    "Pages": "Pages"
+    "Services": "Services",
+    "Contacts": "Contacts",
+
+    "Search for a product category": "Поиск товарной категории",
+    "Marketing analytics": "Маркетинг аналитика",
+    "Logistics": "Логистика",
+    "Registration certification": "Регистрация сертификация",
+    "Documentation": "Документы",
+
+    "Devloped by": "Devloped by"
 }
