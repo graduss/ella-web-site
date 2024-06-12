@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import { NextIntlClientProvider, useMessages } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
 import { Roboto, Playfair_Display } from 'next/font/google';
 import { GoogleAnalytics } from '@next/third-parties/google';
 import pick from 'lodash/pick';
@@ -39,13 +40,18 @@ library.add(
 
 import "@/styles/index.css";
 
+
 const roboto = Roboto({ weight: ["700", "400", "500"], style: ["normal", "italic"], subsets: ["latin"] });
 const playfairDisplay = Playfair_Display({ subsets: ["latin"], weight: ["400", "500"], variable: "--playfair-display" })
 
-export const metadata: Metadata = {
-  title: "ConstMax",
-  description: "ConstMax - профессиональная B2B платформа",
-};
+export async function generateMetadata({params: {locale}}) {
+  const t = await getTranslations({locale, namespace: 'meta'});
+
+  return {
+    title: "ConstMax",
+    description: t('ConstMax_desc'),
+  }
+}
 
 export default function RootLayout({
   children,

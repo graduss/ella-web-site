@@ -2,5 +2,79 @@
   "privacy": {
     "title": "Политика конфиденциальности",
     "link": "Политика конфиденциальности"
+  },
+
+  "meta": {
+    "ConstMax_desc": "ConstMax - профессиональная B2B платформа",
+    "title-privacy": "Политика конфиденциальности | ConstMax"
+  },
+
+  "home": {
+    "About": "О нас",
+    "ConstMax_desc": "ConstMax – это профессиональная В2В платформа, для развития экспортного бизнеса, между Западной и Восточной Европой.",
+    "15_years": "<s>Специалисты ConstMax более 15 лет успешно </s> занимается экспортным бизнесом, Мы объединились и создали сообщество профессионалов в своей области. Наша  команда, сделают свою работу на высоком уровне для Вашего спокойствия и развития бизнеса.",
+  
+    "Our professionals" : "Наши профессионалы:",
+    "Manager of Perfume and Cosmetics Export": "Экспорт-менеджер парфюмерно-косметического направления",
+    "Manager of Medical and Pharmaceutical Export": "Экспорт-менеджер медицинско-фармацевтического направления",
+    "Customs Agent": "Таможенный агент",
+    "Expert in Registration and Certification": "Эксперт по регистрации и сертификации",
+    "Export Legal Counsel": "Юрист по экспорту",
+    "Marketing and Analytics Specialist": "Маркетолог-аналитик",
+    "Logistics Expeditor": "Экспедитор логистики",
+
+    "Why us": "Почему мы:",
+    "Quick Product Category Search": "Быстрый поиск товарной категории",
+    "Negotiation Conduct on Your Terms": "Проведение переговоров на Ваших условиях",
+    "Negotiating in the Native Speakers Language": "Проведение переговоров на языке носителя",
+    "Document Preparation": "Подготовка документов",
+    "Finding a Logistics Company at a Competitive Price": "Поиск логистической компании по выгодной цене",
+    "Supply Monitoring at All Stages": "Контроль поставки на всех этапах",
+    "Certification and Registration Conduct": "Проведение сертификации и регистрации",
+
+    "Business Model": "Модель бизнеса:",
+    "Signing a contract": "Мы заключаем договор",
+    "Based on your request, we will prepare a preliminary proposal for you": "На основе Вашей заявки Мы подготовим для Вас предварительное предложение",
+    "Conducting Negotiations": "Проведение переговоров",
+    "Agreement on Collaboration Terms": "Согласование условий сотрудничества",
+    "Arranging Transport Services": "Заказ транспорта",
+    "Quality and Delivery Monitoring": "Контроль качества и поставки товара",
+
+    "Direction": "Направление",
+    "Product Category Search": "Поиск товарной категории",
+    "Cosmetics": "Косметика",
+    "Perfumery": "Парфюмерия",
+    "CTM": "CTM",
+
+    "Medical Equipment": "Изделия медицинского назначения",
+    "Medicinal Products": "Лекарственные средства",
+    "Aesthetic Medicine": "Эстетическая медицина",
+    "Biologically Active Supplements (BAS)": "Биологически активные добавки",
+
+    "Category Product Analysis": "Анализ по товарной категории",
+    "Business Model for the Selected Product Category": "Бизнес-модель по выбранной товарной категории",
+    "Manufacturer Market Sales History": "История продаж на рынке производителя",
+    "ABC Analysis of Product Category": "ABC анализ товарной категории",
+    "Sales Strategy": "Стратегия продаж",
+
+    "Registration and Certification": "Регистрация Сертификация",
+    "Application Submission with a Package of Supporting Documents": "Оформление заявки с пакетом сопутствующих документов",
+    "Preparation of Payment Documentation": "Оформление платежной документации",
+    "Selection of Product Samples for Laboratory Testing": "Выборка образов продукции для лабораторных испытаний",
+    "Conducting Laboratory Tests": "Проведение лабораторных испытаний",
+    "Production Analysis of Product Line Certification": "Анализ производства в случае сертификации серии продукции",
+    "Certificate Issuance": "Предоставление сертификата",
+
+    "Logistics": "Логистика",
+    "Search for a Transportation Company in the Chosen Direction": "Поиск транспортной компании в выбранном направлении",
+    "LCL (Less than Container Load) Proposal": "Предложение по сборному грузу",
+    "Logistics Cost Calculation": "Расчет стоимости логистики",
+
+    "Documents": "Документы",
+    "Export Invoice": "Экспортная накладная",
+    "Customs Declaration": "Таможенная декларация",
+    "MSDS": "MSDS",
+
+    "Our Contact Information": "Наши контакты"
   }
 }

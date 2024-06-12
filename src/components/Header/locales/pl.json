@@ -1,14 +1,14 @@
 {
-    "Home": "Главная",
-    "About": "О нас",
-    "Services": "Направление",
-    "Contacts": "Контакты",
+    "Home": "Home",
+    "About": "About",
+    "Services": "Direction",
+    "Contacts": "Contacts",
 
-    "Search for a product category": "Поиск товарной категории",
-    "Marketing analytics": "Маркетинг аналитика",
-    "Logistics": "Логистика",
-    "Registration certification": "Регистрация сертификация",
-    "Documentation": "Документы",
+    "Search for a product category": "Product Category Search",
+    "Marketing analytics": "Marketing and Analytics Specialist",
+    "Logistics": "Logistics",
+    "Registration certification": "Registration and Certification",
+    "Documentation": "Documents",
 
     "Devloped by": "Разработан"
 }
