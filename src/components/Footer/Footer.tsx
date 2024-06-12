@@ -37,14 +37,21 @@ type TFooterContacs = {
   title?: string
 }
 
-const FooterContacs: FC<TFooterContacs> = ({ className, title }) => (
-  <div className={className}>
-    <div className="">
-      {title && (<h2 className={style.links_title}>{title}</h2>)}
-      <Contacts />
+const FooterContacs: FC<TFooterContacs> = ({ className, title }) => {
+  const t = useTranslations('privacy');
+  return (
+    <div className={className}>
+      <div className="">
+        {title && (<h2 className={style.links_title}>{title}</h2>)}
+        <Contacts>
+          <>
+            <li><Link href={"/privacy"}>{t('link')}</Link></li>
+          </>
+        </Contacts>
+      </div>
     </div>
-  </div>
-);
+  );
+}
 
 const Footer = () => {
   const t = useTranslations('header');
@@ -65,14 +72,19 @@ const Footer = () => {
               </div>
             </div>
 
-            <FooterLinksSection title={t('Services')} links={usefulLinks} />
+            <FooterLinksSection className={style.servicies} title={t('Services')} links={usefulLinks} />
             <FooterContacs className={style.contacts} title={t('Contacts')} />
           </div>
 
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-8">
             <p className="text-center text-base text-white">
-              &copy; ConstMax 2024. &nbsp;<em className="text-gray-400 text-nowrap">Разработан <Link target="_blank"  href={"https://www.linkedin.com/in/azhyburtovich/"}>Aliaksandr Zhyburtovich</Link> &nbsp;v{version}</em>
+              &copy; ConstMax 2024. &nbsp;
+              <em className="text-gray-400 text-nowrap">
+                {t('Devloped by')}&nbsp;
+                <Link target="_blank"  href={"https://www.linkedin.com/in/azhyburtovich/"}>Aliaksandr Zhyburtovich</Link>
+                &nbsp;v{version}
+              </em>
             </p>
           </div>
         </div>

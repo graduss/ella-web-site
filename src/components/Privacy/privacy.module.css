@@ -1,0 +1,15 @@
+.main h2 {
+  @apply my-2 text-lg font-bold;
+}
+
+.main ul {
+  @apply my-2;
+}
+
+.main li {
+  @apply list-none mb-2;
+}
+
+.main em {
+  @apply text-gray-600;
+}
