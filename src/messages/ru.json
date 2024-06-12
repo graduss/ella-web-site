@@ -4,6 +4,11 @@
     "link": "Политика конфиденциальности"
   },
 
+  "meta": {
+    "ConstMax_desc": "ConstMax - профессиональная B2B платформа",
+    "title-privacy": "Политика конфиденциальности | ConstMax"
+  },
+
   "home": {
     "About": "О нас",
     "ConstMax_desc": "ConstMax – это профессиональная В2В платформа, для развития экспортного бизнеса, между Западной и Восточной Европой.",
@@ -33,6 +38,43 @@
     "Conducting Negotiations": "Проведение переговоров",
     "Agreement on Collaboration Terms": "Согласование условий сотрудничества",
     "Arranging Transport Services": "Заказ транспорта",
-    "Quality and Delivery Monitoring": "Контроль качества и поставки товара"
+    "Quality and Delivery Monitoring": "Контроль качества и поставки товара",
+
+    "Direction": "Направление",
+    "Product Category Search": "Поиск товарной категории",
+    "Cosmetics": "Косметика",
+    "Perfumery": "Парфюмерия",
+    "CTM": "CTM",
+
+    "Medical Equipment": "Изделия медицинского назначения",
+    "Medicinal Products": "Лекарственные средства",
+    "Aesthetic Medicine": "Эстетическая медицина",
+    "Biologically Active Supplements (BAS)": "Биологически активные добавки",
+
+    "Category Product Analysis": "Анализ по товарной категории",
+    "Business Model for the Selected Product Category": "Бизнес-модель по выбранной товарной категории",
+    "Manufacturer Market Sales History": "История продаж на рынке производителя",
+    "ABC Analysis of Product Category": "ABC анализ товарной категории",
+    "Sales Strategy": "Стратегия продаж",
+
+    "Registration and Certification": "Регистрация Сертификация",
+    "Application Submission with a Package of Supporting Documents": "Оформление заявки с пакетом сопутствующих документов",
+    "Preparation of Payment Documentation": "Оформление платежной документации",
+    "Selection of Product Samples for Laboratory Testing": "Выборка образов продукции для лабораторных испытаний",
+    "Conducting Laboratory Tests": "Проведение лабораторных испытаний",
+    "Production Analysis of Product Line Certification": "Анализ производства в случае сертификации серии продукции",
+    "Certificate Issuance": "Предоставление сертификата",
+
+    "Logistics": "Логистика",
+    "Search for a Transportation Company in the Chosen Direction": "Поиск транспортной компании в выбранном направлении",
+    "LCL (Less than Container Load) Proposal": "Предложение по сборному грузу",
+    "Logistics Cost Calculation": "Расчет стоимости логистики",
+
+    "Documents": "Документы",
+    "Export Invoice": "Экспортная накладная",
+    "Customs Declaration": "Таможенная декларация",
+    "MSDS": "MSDS",
+
+    "Our Contact Information": "Наши контакты"
   }
 }

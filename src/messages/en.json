@@ -4,6 +4,11 @@
     "link": "Privacy Policy"
   },
 
+  "meta": {
+    "ConstMax_desc": "ConstMax is a professional B2B platform",
+    "title-privacy": "Privacy Policy | ConstMax"
+  },
+
   "home": {
     "About": "About",
     "ConstMax_desc": "ConstMax is a professional B2B platform for developing export business, between Western and Eastern Europe.",
@@ -35,6 +40,41 @@
     "Arranging Transport Services": "Arranging Transport Services",
     "Quality and Delivery Monitoring": "Quality and Delivery Monitoring",
 
-    "Direction": "Direction"
+    "Direction": "Direction",
+    "Product Category Search": "Product Category Search",
+    "Cosmetics": "Cosmetics",
+    "Perfumery": "Perfumery",
+    "CTM": "CTM",
+
+    "Medical Equipment": "Medical Equipment",
+    "Medicinal Products": "Medicinal Products",
+    "Aesthetic Medicine": "Aesthetic Medicine",
+    "Biologically Active Supplements (BAS)": "Biologically Active Supplements (BAS)",
+
+    "Category Product Analysis": "Category Product Analysis",
+    "Business Model for the Selected Product Category": "Business Model for the Selected Product Category",
+    "Manufacturer Market Sales History": "Manufacturer Market Sales History",
+    "ABC Analysis of Product Category": "ABC Analysis of Product Category",
+    "Sales Strategy": "Sales Strategy",
+
+    "Registration and Certification": "Registration and Certification",
+    "Application Submission with a Package of Supporting Documents": "Application Submission with a Package of Supporting Documents",
+    "Preparation of Payment Documentation": "Preparation of Payment Documentation",
+    "Selection of Product Samples for Laboratory Testing": "Selection of Product Samples for Laboratory Testing",
+    "Conducting Laboratory Tests": "Conducting Laboratory Tests",
+    "Production Analysis of Product Line Certification": "Production Analysis of Product Line Certification",
+    "Certificate Issuance": "Certificate Issuance",
+
+    "Logistics": "Logistics",
+    "Search for a Transportation Company in the Chosen Direction": "Search for a Transportation Company in the Chosen Direction",
+    "LCL (Less than Container Load) Proposal": "LCL (Less than Container Load) Proposal",
+    "Logistics Cost Calculation": "Logistics Cost Calculation",
+
+    "Documents": "Documents",
+    "Export Invoice": "Export Invoice",
+    "Customs Declaration": "Customs Declaration",
+    "MSDS": "MSDS",
+
+    "Our Contact Information": "Our Contact Information"
   }
 }

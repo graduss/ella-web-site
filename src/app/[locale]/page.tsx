@@ -81,7 +81,7 @@ export default function Home() {
         
         <section>
           <div className="title">
-            <h2>Направление</h2>
+            <h2>{t('Direction')}</h2>
           </div>
 
           <ServiceList />
@@ -90,78 +90,78 @@ export default function Home() {
         <section className={style.areas}>
           <article className={style.areaItem}>
             <div id="product_search" className="title">
-              <h2>Поиск товарной категории</h2>
+              <h2>{t('Product Category Search')}</h2>
             </div>
-            <label>Экспорт-менеджер парфюмерно-косметического направления</label>
+            <label>{t('Manager of Perfume and Cosmetics Export')}</label>
             <ul>
-              <Li icon={ "fa-solid fa-right-long" as IconProp }>Биологически активные добавки</Li>
-              <Li icon={ "fa-solid fa-right-long" as IconProp }>Косметика</Li>
-              <Li icon={ "fa-solid fa-right-long" as IconProp }>Парфюмерия</Li>
-              <Li icon={ "fa-solid fa-right-long" as IconProp }>СТМ</Li>
+              <Li icon={ "fa-solid fa-right-long" as IconProp }>{t('Biologically Active Supplements (BAS)')}</Li>
+              <Li icon={ "fa-solid fa-right-long" as IconProp }>{t('Cosmetics')}</Li>
+              <Li icon={ "fa-solid fa-right-long" as IconProp }>{t('Perfumery')}</Li>
+              <Li icon={ "fa-solid fa-right-long" as IconProp }>{t('CTM')}</Li>
             </ul>
 
-            <label>Экспорт-менеджер медицинско-фармацевтического направления</label>
+            <label>{t('Manager of Medical and Pharmaceutical Export')}</label>
             <ul>
-              <Li icon={ "fa-solid fa-right-long" as IconProp }>Изделия медицинского назначения</Li>
-              <Li icon={ "fa-solid fa-right-long" as IconProp }>Лекарственные средства</Li>
-              <Li icon={ "fa-solid fa-right-long" as IconProp }>Эстетическая медицина</Li>
-              <Li icon={ "fa-solid fa-right-long" as IconProp }>Биологически активные добавки</Li>
+              <Li icon={ "fa-solid fa-right-long" as IconProp }>{t('Medical Equipment')}</Li>
+              <Li icon={ "fa-solid fa-right-long" as IconProp }>{t('Medicinal Products')}</Li>
+              <Li icon={ "fa-solid fa-right-long" as IconProp }>{t('Aesthetic Medicine')}</Li>
+              <Li icon={ "fa-solid fa-right-long" as IconProp }>{t('Biologically Active Supplements (BAS)')}</Li>
             </ul>
           </article>
 
           <article className={style.areaItem}>
             <div id="marketing_analytics" className="title">
-              <h2>Маркетолог-аналитик</h2>
+              <h2>{t('Marketing and Analytics Specialist')}</h2>
             </div>
             <ul>
-              <Li icon={ "fa-solid fa-right-long" as IconProp }>Анализ по товарной категории</Li>
-              <Li icon={ "fa-solid fa-right-long" as IconProp }>Бизнес-модель по выбранной товарной категории</Li>
-              <Li icon={ "fa-solid fa-right-long" as IconProp }>История продаж на рынке производителя</Li>
-              <Li icon={ "fa-solid fa-right-long" as IconProp }>АВС анализ товарной категории</Li>
-              <Li icon={ "fa-solid fa-right-long" as IconProp }>Стратегия продаж</Li>
+              <Li icon={ "fa-solid fa-right-long" as IconProp }>{t('Category Product Analysis')}</Li>
+              <Li icon={ "fa-solid fa-right-long" as IconProp }>{t('Business Model for the Selected Product Category')}</Li>
+              <Li icon={ "fa-solid fa-right-long" as IconProp }>{t('Manufacturer Market Sales History')}</Li>
+              <Li icon={ "fa-solid fa-right-long" as IconProp }>{t('ABC Analysis of Product Category')}</Li>
+              <Li icon={ "fa-solid fa-right-long" as IconProp }>{t('Sales Strategy')}</Li>
             </ul>
           </article>
 
           <article className={style.areaItem}>
             <div id="registration_certification" className="title">
-              <h2>Регистрация Сертификация</h2>
+              <h2>{t('Registration and Certification')}</h2>
             </div>
             <ul>
-              <Li icon={ "fa-solid fa-right-long" as IconProp }>Оформление заявки с пакетом сопутствующих документов</Li>
-              <Li icon={ "fa-solid fa-right-long" as IconProp }>Оформление платежной документации</Li>
-              <Li icon={ "fa-solid fa-right-long" as IconProp }>Выборка образов продукции для лабораторных испытаний</Li>
-              <Li icon={ "fa-solid fa-right-long" as IconProp }>Проведение лабораторных испытаний</Li>
-              <Li icon={ "fa-solid fa-right-long" as IconProp }>Анализ производства в случае сертификации серии продукции</Li>
-              <Li icon={ "fa-solid fa-right-long" as IconProp }>Предоставление сертификата</Li>
+              <Li icon={ "fa-solid fa-right-long" as IconProp }>{t('Application Submission with a Package of Supporting Documents')}</Li>
+              <Li icon={ "fa-solid fa-right-long" as IconProp }>{t('Preparation of Payment Documentation')}</Li>
+              <Li icon={ "fa-solid fa-right-long" as IconProp }>{t('Selection of Product Samples for Laboratory Testing')}</Li>
+              <Li icon={ "fa-solid fa-right-long" as IconProp }>{t('Conducting Laboratory Tests')}</Li>
+              <Li icon={ "fa-solid fa-right-long" as IconProp }>{t('Production Analysis of Product Line Certification')}</Li>
+              <Li icon={ "fa-solid fa-right-long" as IconProp }>{t('Certificate Issuance')}</Li>
             </ul>
           </article>
 
           <article className={style.areaItem}>
             <div id="logistics" className="title">
-              <h2>Логистика</h2>
+              <h2>{t('Logistics')}</h2>
             </div>
             <ul>
-              <Li icon={ "fa-solid fa-right-long" as IconProp }>Поиск транспортной компании в выбранном направлении</Li>
-              <Li icon={ "fa-solid fa-right-long" as IconProp }>Предложение по сборному грузу</Li>
-              <Li icon={ "fa-solid fa-right-long" as IconProp }>Расчет стоимости логистики</Li>
+              <Li icon={ "fa-solid fa-right-long" as IconProp }>{t('Search for a Transportation Company in the Chosen Direction')}</Li>
+              <Li icon={ "fa-solid fa-right-long" as IconProp }>{t('LCL (Less than Container Load) Proposal')}</Li>
+              <Li icon={ "fa-solid fa-right-long" as IconProp }>{t('Logistics Cost Calculation')}</Li>
             </ul>
           </article>
 
           <article className={style.areaItem}>
             <div id="documentation" className="title">
-              <h2>Документы</h2>
+              <h2>{t('Documents')}</h2>
             </div>
             <ul>
-              <Li icon={ "fa-solid fa-right-long" as IconProp }>Экспортная накладная</Li>
-              <Li icon={ "fa-solid fa-right-long" as IconProp }>Таможенная декларация</Li>
-              <Li icon={ "fa-solid fa-right-long" as IconProp }>MSDS</Li>
+              <Li icon={ "fa-solid fa-right-long" as IconProp }>{t('Export Invoice')}</Li>
+              <Li icon={ "fa-solid fa-right-long" as IconProp }>{t('Customs Declaration')}</Li>
+              <Li icon={ "fa-solid fa-right-long" as IconProp }>{t('MSDS')}</Li>
             </ul>
           </article>
         </section>
 
         <section className={style.contacts}>
           <div id="contacts" className="title">
-            <h2>Наши контакты</h2>
+            <h2>{t('Our Contact Information')}</h2>
           </div>
 
           <MapSection address="ul. Szosa Chełmińska 105, 87-100 Toruń, Polska" />
