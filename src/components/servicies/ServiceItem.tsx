@@ -18,8 +18,8 @@ const ServiceItem:FC<TServiseItem> = ({ title, path, icon }) => {
             <div>
                 <FontAwesomeIcon className={style.icon} icon={icon as IconProp} />
             </div>
-            <label className="title text-center mt-4">
-                <h4>{t(title)}</h4>
+            <label className="text-center mt-4 uppercase text-lg">
+                {t(title)}
             </label>
         </Link>
     );

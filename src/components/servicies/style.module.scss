@@ -5,6 +5,7 @@
 .curd {
     @apply flex flex-col items-center p-8 bg-neutral-100 rounded;
     &:hover {
+        @apply text-primary;
         path {
             @apply fill-primary;
         }

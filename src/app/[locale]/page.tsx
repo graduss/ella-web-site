@@ -12,8 +12,8 @@ export default function Home() {
 
   return (
     <>
-      <div className={style.pageTitle}>
-        <div id="about" className={style.title}>
+      <div className="pageTitle">
+        <div id="about" className="title">
           <h1>О нас</h1>
         </div>
       </div>
@@ -32,7 +32,7 @@ export default function Home() {
           <section className={style.aboutArticals}>
 
             <article className={style.aboutArticalItem}>
-              <div className={style.title}>
+              <div className="title">
                 <h2>Наши профессионалы:</h2>
               </div>
 
@@ -48,7 +48,7 @@ export default function Home() {
             </article>
 
             <article className={style.aboutArticalItem}>
-              <div className={style.title}>
+              <div className="title">
                 <h2>Почему мы:</h2>
               </div>
 
@@ -64,7 +64,7 @@ export default function Home() {
             </article>
 
             <article className={style.aboutArticalItem}>
-              <div className={style.title}>
+              <div className="title">
                 <h2>Модель бизнеса:</h2>
               </div>
 
@@ -83,7 +83,7 @@ export default function Home() {
         </section>
         
         <section>
-          <div className={style.title}>
+          <div className="title">
             <h2>Направление</h2>
           </div>
 
@@ -92,7 +92,7 @@ export default function Home() {
 
         <section className={style.areas}>
           <article className={style.areaItem}>
-            <div id="product_search" className={style.title}>
+            <div id="product_search" className="title">
               <h2>Поиск товарной категории</h2>
             </div>
             <label>Экспорт-менеджер парфюмерно-косметического направления</label>
@@ -113,7 +113,7 @@ export default function Home() {
           </article>
 
           <article className={style.areaItem}>
-            <div id="marketing_analytics" className={style.title}>
+            <div id="marketing_analytics" className="title">
               <h2>Маркетолог-аналитик</h2>
             </div>
             <ul>
@@ -126,7 +126,7 @@ export default function Home() {
           </article>
 
           <article className={style.areaItem}>
-            <div id="registration_certification" className={style.title}>
+            <div id="registration_certification" className="title">
               <h2>Регистрация Сертификация</h2>
             </div>
             <ul>
@@ -140,7 +140,7 @@ export default function Home() {
           </article>
 
           <article className={style.areaItem}>
-            <div id="logistics" className={style.title}>
+            <div id="logistics" className="title">
               <h2>Логистика</h2>
             </div>
             <ul>
@@ -151,7 +151,7 @@ export default function Home() {
           </article>
 
           <article className={style.areaItem}>
-            <div id="documentation" className={style.title}>
+            <div id="documentation" className="title">
               <h2>Документы</h2>
             </div>
             <ul>
@@ -163,7 +163,7 @@ export default function Home() {
         </section>
 
         <section className={style.contacts}>
-          <div id="contacts" className={style.title}>
+          <div id="contacts" className="title">
             <h2>Наши контакты</h2>
           </div>
 

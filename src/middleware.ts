@@ -5,5 +5,5 @@ import { LocaleConfig } from "@/locales";
 export default createMiddleware(LocaleConfig);
 
 export const config = {
-  matcher: ["/", "/(ru|pl)/:path*"],
+  matcher: ["/", "/(ru|pl|en)/:path*"],
 };
