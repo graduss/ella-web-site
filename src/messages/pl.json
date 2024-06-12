@@ -2,5 +2,37 @@
   "privacy": {
     "title": "Privacy Policy",
     "link": "Privacy Policy"
+  },
+
+  "home": {
+    "About": "About",
+    "ConstMax_desc": "ConstMax is a professional B2B platform for developing export business, between Western and Eastern Europe.",
+    "15_years": "<s>ConstMax specialists have been successfully working for over 15 years</s> in the export business. We have united and created a community of professionals in our field. Our team will perform their work at a high level for your business growth.",
+
+    "Our professionals" : "Our professionals:",
+    "Manager of Perfume and Cosmetics Export": "Manager of Perfume and Cosmetics Export",
+    "Manager of Medical and Pharmaceutical Export": "Manager of Medical and Pharmaceutical Export",
+    "Customs Agent": "Customs Agent",
+    "Expert in Registration and Certification": "Expert in Registration and Certification",
+    "Export Legal Counsel": "Export Legal Counsel",
+    "Marketing and Analytics Specialist": "Marketing and Analytics Specialist",
+    "Logistics Expeditor": "Logistics Expeditor",
+
+    "Why us": "Why us:",
+    "Quick Product Category Search": "Quick Product Category Search",
+    "Negotiation Conduct on Your Terms": "Negotiation Conduct on Your Terms",
+    "Negotiating in the Native Speakers Language": "Negotiating in the Native Speaker's Language",
+    "Document Preparation": "Document Preparation",
+    "Finding a Logistics Company at a Competitive Price": "Finding a Logistics Company at a Competitive Price",
+    "Supply Monitoring at All Stages": "Supply Monitoring at All Stages",
+    "Certification and Registration Conduct": "Certification and Registration Conduct",
+
+    "Business Model": "Business Model:",
+    "Signing a contract": "Signing a contract",
+    "Based on your request, we will prepare a preliminary proposal for you": "Based on your request, we will prepare a preliminary proposal for you",
+    "Conducting Negotiations": "Conducting Negotiations",
+    "Agreement on Collaboration Terms": "Agreement on Collaboration Terms",
+    "Arranging Transport Services": "Arranging Transport Services",
+    "Quality and Delivery Monitoring": "Quality and Delivery Monitoring"
   }
 }

@@ -1,81 +1,78 @@
+import { useTranslations } from "next-intl";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
+import { Li } from "@/components/Common";
+import MapSection from "@/components/MapSection/MapSection";
+import Contacts from "@/components/Contacts/Contacts";
+
 
 import ServiceList from "@/components/servicies/ServicieList";
 
 import style from "./style.module.css";
 
-import { Li } from "@/components/Common";
-import MapSection from "@/components/MapSection/MapSection";
-import Contacts from "@/components/Contacts/Contacts";
-
 export default function Home() {
+  const t = useTranslations('home');
 
   return (
     <>
       <div className="pageTitle">
         <div id="about" className="title">
-          <h1>О нас</h1>
+          <h1>{t('About')}</h1>
         </div>
       </div>
       <main className="page">
         <section>
           <article>
-            <strong>
-              ConstMax – это профессиональная В2В платформа, для развития экспортного бизнеса,
-              между Западной и Восточной Европой.
-            </strong><br />
-            <strong>Специалисты ConstMax более 15 лет успешно </strong>
-            занимается экспортным бизнесом, Мы объединились и создали сообщество профессионалов в своей области.
-            Наша  команда, сделают свою работу на высоком уровне для Вашего спокойствия и развития бизнеса.
+            <strong>{t('ConstMax_desc')}</strong><br />
+            {t.rich('15_years', { s: (ch) => <strong>{ch}</strong> })}
           </article>
 
           <section className={style.aboutArticals}>
 
             <article className={style.aboutArticalItem}>
               <div className="title">
-                <h2>Наши профессионалы:</h2>
+                <h2>{t('Our professionals')}</h2>
               </div>
 
               <ul>
-                <Li>Экспорт-менеджер парфюмерно-косметического направления</Li>
-                <Li>Экспорт-менеджер медицинско-фармацевтического направления</Li>
-                <Li>Таможенный агент</Li>
-                <Li>Эксперт по регистрации и сертификации</Li>
-                <Li>Юрист по экспорту</Li>
-                <Li>Маркетолог-аналитик</Li>
-                <Li>Экспедитор логистики</Li>
+                <Li>{t('Manager of Perfume and Cosmetics Export')}</Li>
+                <Li>{t('Manager of Medical and Pharmaceutical Export')}</Li>
+                <Li>{t('Customs Agent')}</Li>
+                <Li>{t('Expert in Registration and Certification')}</Li>
+                <Li>{t('Export Legal Counsel')}</Li>
+                <Li>{t('Marketing and Analytics Specialist')}</Li>
+                <Li>{t('Logistics Expeditor')}</Li>
               </ul>
             </article>
 
             <article className={style.aboutArticalItem}>
               <div className="title">
-                <h2>Почему мы:</h2>
+                <h2>{t('Why us')}</h2>
               </div>
 
               <ul>
-                <Li>Быстрый поиск товарной категории</Li>
-                <Li>Проведение переговоров на Ваших условиях</Li>
-                <Li>Проведение переговоров на языке носителя</Li>
-                <Li>Подготовка документов</Li>
-                <Li>Поиск логистической компании по выгодной цене</Li>
-                <Li>Контроль поставки на всех этапах</Li>
-                <Li>Проведение сертификации и регистрации</Li>
+                <Li>{t('Quick Product Category Search')}</Li>
+                <Li>{t('Negotiation Conduct on Your Terms')}</Li>
+                <Li>{t('Negotiating in the Native Speakers Language')}</Li>
+                <Li>{t('Document Preparation')}</Li>
+                <Li>{t('Finding a Logistics Company at a Competitive Price')}</Li>
+                <Li>{t('Supply Monitoring at All Stages')}</Li>
+                <Li>{t('Certification and Registration Conduct')}</Li>
               </ul>
             </article>
 
             <article className={style.aboutArticalItem}>
               <div className="title">
-                <h2>Модель бизнеса:</h2>
+                <h2>{t('Business Model')}</h2>
               </div>
 
               <ul>
-                <Li>Мы заключаем договор</Li>
-                <Li>На основе Вашей заявки Мы подготовим для Вас предварительное предложение</Li>
-                <Li>Проведение переговоров</Li>
-                <Li>Согласование условий  сотрудничества</Li>
-                <Li>Подготовка документов</Li>
-                <Li>Заказ транспорта</Li>
-                <Li>Контроль качества и поставки товара</Li>
+                <Li>{t('Signing a contract')}</Li>
+                <Li>{t('Based on your request, we will prepare a preliminary proposal for you')}</Li>
+                <Li>{t('Conducting Negotiations')}</Li>
+                <Li>{t('Agreement on Collaboration Terms')}</Li>
+                <Li>{t('Document Preparation')}</Li>
+                <Li>{t('Arranging Transport Services')}</Li>
+                <Li>{t('Quality and Delivery Monitoring')}</Li>
               </ul>
             </article>
 
