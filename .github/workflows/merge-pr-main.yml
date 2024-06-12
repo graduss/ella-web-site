@@ -8,22 +8,21 @@ on:
       - main
 
 jobs:
-  update-version:
-    if: github.event.pull_request.merged == true
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: main
-          token: ${{ secrets.ACCESS_TOKEN }}
-      - run: git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
-      - run: git config user.name "$GITHUB_ACTOR"
-      - run: npm version minor -m "Set v%s"
-      - run: VERSION=$(node -p "require('./package.json').version")
-      - run: git tag ${VERSION}
-      - run: git push origin --follow-tags
+  # update-version:
+  #   if: github.event.pull_request.merged == true
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #       with:
+  #         ref: main
+  #         token: ${{ secrets.ACCESS_TOKEN }}
+  #     - run: git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
+  #     - run: git config user.name "$GITHUB_ACTOR"
+  #     - run: npm version minor -m "Set v%s"
+  #     - run: VERSION=$(node -p "require('./package.json').version")
+  #     - run: git tag ${VERSION}
+  #     - run: git push origin --follow-tags
   docker-image:
-    needs: update-version
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

@@ -12,7 +12,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: {
         languages: {
           ru: `${host}/ru`,
-          //pl: `${host}/pl`,
+          en: `${host}/en`,
+        },
+      },
+    },
+    {
+      url: `${host}/privacy`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 1,
+      alternates: {
+        languages: {
+          ru: `${host}/ru/privacy`,
+          en: `${host}/en/privacy`,
         },
       },
     }
