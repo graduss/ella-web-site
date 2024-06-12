@@ -72,7 +72,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <FooterLinksSection title={t('Services')} links={usefulLinks} />
+            <FooterLinksSection className={style.servicies} title={t('Services')} links={usefulLinks} />
             <FooterContacs className={style.contacts} title={t('Contacts')} />
           </div>
 

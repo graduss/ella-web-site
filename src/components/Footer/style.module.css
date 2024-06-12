@@ -10,6 +10,10 @@
     @apply mb-2 inline-block text-base text-white/70 hover:text-white duration-300;
 }
 
+.servicies li {
+    @apply list-none;
+}
+
 .contacts {
     @apply text-base text-white/70
 }
