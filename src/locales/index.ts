@@ -4,6 +4,16 @@ import {
 } from 'next-intl/navigation';
 import {ComponentProps} from 'react';
 
+export type TLocaleOption = {
+    value: string;
+    label: string;
+};
+
+export const LocaleOptions: TLocaleOption[] = [
+    { value: 'en', label: 'English' },
+    { value: 'ru', label: 'Russian' },
+];
+
 export const LocaleConfig = {
     locales: ["ru", "en"],
     defaultLocale: "en",
