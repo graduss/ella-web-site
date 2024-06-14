@@ -58,6 +58,7 @@ jobs:
           key: ${{ secrets.KEY }}
           script: |
             docker pull graduss/ella-web-site
+            cd getway
             docker compose down
             docker compose up -d
 

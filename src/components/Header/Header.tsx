@@ -8,6 +8,7 @@ import menuData from "./menuData";
 import Logo from "../Logo/Logo";
 
 import style from './styles.module.css';
+import LanguageSwitch from "../LanguageSwitch/LanguageSwitch";
 
 const Header = () => {
   // Navbar toggle
@@ -149,6 +150,7 @@ const Header = () => {
                         )}
                       </li>
                     ))}
+                    <LanguageSwitch />
                   </ul>
                 </nav>
               </div>
