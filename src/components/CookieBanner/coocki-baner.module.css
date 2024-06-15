@@ -1,0 +1,23 @@
+.coockiBaner {
+  @apply fixed bottom-0 left-0 right-0 bg-gray-200 p-8;
+}
+
+.hide {
+  @apply hidden;
+}
+
+.coockiBaner a {
+  @apply text-primary hover:underline;
+}
+
+.bootons {
+  @apply flex justify-start gap-4 mt-4;
+}
+
+.btn {
+  @apply cursor-pointer px-4 py-2 border-primary border-2 rounded text-primary;
+}
+
+.btn.btnPrimary {
+  @apply text-white/70 bg-primary;
+}
