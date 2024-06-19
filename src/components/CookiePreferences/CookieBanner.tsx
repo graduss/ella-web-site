@@ -10,7 +10,8 @@ import { useEffect, useState } from "react";
 type TCookieConsent = 'granted' | 'denied';
 
 export default function CookieBanner() {
-  const [cookieConsent, setCookieConsent] = useState<TCookieConsent|null>(null);
+  const [cookieConsent, setCookieConsent] = useState<TCookieConsent>('denied');
+  const [isShow, setIsShow] = useState<boolean>(false);
   const t = useTranslations('cookie-banner');
 
   const handeleAllow = () => {

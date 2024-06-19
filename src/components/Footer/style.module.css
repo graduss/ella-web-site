@@ -26,6 +26,14 @@
     @apply text-sky-400;
 }
 
+.footer .copy {
+    @apply flex gap-2 justify-start text-white/70
+}
+
+.footer .copy em {
+    @apply flex-1 text-right;
+}
+
 .footer em a {
-    @apply hover:underline
+    @apply text-white/70 hover:text-white
 }
