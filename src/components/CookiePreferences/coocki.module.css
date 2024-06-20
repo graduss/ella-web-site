@@ -1,3 +1,7 @@
+.cookiePref {
+  @apply hover:text-white;
+}
+
 .coockiBaner {
   @apply fixed bottom-0 left-0 right-0 bg-gray-200 p-8;
 }

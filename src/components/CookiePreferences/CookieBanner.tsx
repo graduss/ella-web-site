@@ -4,14 +4,13 @@ import { Link } from "@/locales";
 import { useTranslations } from "next-intl";
 import cm from 'classnames';
 
-import style from './coocki-baner.module.css';
+import style from './coocki.module.css';
 import { useEffect, useState } from "react";
 
 type TCookieConsent = 'granted' | 'denied';
 
 export default function CookieBanner() {
   const [cookieConsent, setCookieConsent] = useState<TCookieConsent>('denied');
-  const [isShow, setIsShow] = useState<boolean>(false);
   const t = useTranslations('cookie-banner');
 
   const handeleAllow = () => {

@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { Link } from "@/locales";
-import { useTranslations } from "next-intl";
+import { NextIntlClientProvider, useMessages, useTranslations } from "next-intl";
 
 import { TFLinks, usefulLinks } from './footerMenuData';
 import { version } from "@/servicies";
@@ -9,6 +9,7 @@ import style from "./style.module.css";
 import Logo from "../Logo/Logo";
 import Contacts from "../Contacts/Contacts";
 import CookiePreferences from "../CookiePreferences/CookiePreferences";
+import { pick } from "lodash";
 
 type TLinksSection = {
   className?: string;
@@ -56,6 +57,7 @@ const FooterContacs: FC<TFooterContacs> = ({ className, title }) => {
 
 const Footer = () => {
   const t = useTranslations('header');
+  const messages = useMessages();
 
   return (
     <>
@@ -81,7 +83,9 @@ const Footer = () => {
           <div className="py-8">
             <p className={style.copy}>
               <span>&copy; ConstMax 2024.</span>
-              <CookiePreferences />
+              <NextIntlClientProvider messages={pick(messages, 'cookie-preferences')}>
+                <CookiePreferences />
+              </NextIntlClientProvider>
               <em className="text-gray-400 text-nowrap">
                 {t('Devloped by')}&nbsp;
                 <Link target="_blank"  href={"https://www.linkedin.com/in/azhyburtovich/"}>Aliaksandr Zhyburtovich</Link>
