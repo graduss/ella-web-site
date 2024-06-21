@@ -1,4 +1,3 @@
-import { Metadata } from 'next';
 import { NextIntlClientProvider, useMessages } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import { Roboto, Playfair_Display } from 'next/font/google';
@@ -39,7 +38,6 @@ library.add(
 );
 
 import "@/styles/index.css";
-import CookieBanner from '@/components/CookieBanner/CookieBanner';
 
 
 const roboto = Roboto({ weight: ["700", "400", "500"], style: ["normal", "italic"], subsets: ["latin"] });
@@ -85,9 +83,6 @@ export default function RootLayout({
           </div>
             
           <Footer />
-          <NextIntlClientProvider messages={pick(messages, 'cookie-banner')}>
-            <CookieBanner />
-          </NextIntlClientProvider>
         </body>
         { process.env.GOOGLE_ID && <GoogleAnalytics gaId={process.env.GOOGLE_ID} /> }
     </html>
