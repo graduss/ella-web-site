@@ -1,27 +1,24 @@
 'use client';
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
-
-import style from './coocki.module.css'
-import { getCookieConsent, setGtadAnalyticsStorage } from "./coocki.service";
 import CookieBanner from "./CookieBanner";
+import CookieConsent from './coocki.service';
+
+import style from './coocki.module.css';
 
 export default function CookiePreferences() {
   const t = useTranslations('cookie-preferences');
   const [isShowBaner, setIsSowBner] = useState<boolean>(false);
+  const cc = useMemo(() => CookieConsent.init(), []);
 
   useEffect(() => {
-    const coockiConsent = getCookieConsent();
-    if (coockiConsent === 'granted') setGtadAnalyticsStorage(coockiConsent);
-    else setGtadAnalyticsStorage('denied');
-
-    if (coockiConsent === null) setIsSowBner(true);
-  }, []);
+    if (CookieConsent.userConsentExist() === false) setIsSowBner(true);
+  }, [])
 
   return (
     <>
       <span onClick={() => setIsSowBner(true)} className={style.cookiePref}>{t('Cookie Preferences')}</span>
-      {/* { isShowBaner && <CookieBanner /> } */}
+      { isShowBaner && <CookieBanner onHide={() => setIsSowBner(false)} /> }
     </>
   );
 };

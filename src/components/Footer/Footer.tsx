@@ -81,7 +81,7 @@ const Footer = () => {
 
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-8">
-            <p className={style.copy}>
+            <div className={style.copy}>
               <span>&copy; ConstMax 2024.</span>
               <NextIntlClientProvider messages={pick(messages, 'cookie-preferences')}>
                 <CookiePreferences />
@@ -91,7 +91,7 @@ const Footer = () => {
                 <Link target="_blank"  href={"https://www.linkedin.com/in/azhyburtovich/"}>Aliaksandr Zhyburtovich</Link>
                 &nbsp;v{version}
               </em>
-            </p>
+            </div>
           </div>
         </div>
       </footer>

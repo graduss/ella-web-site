@@ -1,5 +1,5 @@
 .cookiePref {
-  @apply hover:text-white;
+  @apply hover:text-white cursor-pointer;
 }
 
 .coockiBaner {
@@ -8,6 +8,10 @@
 
 .hide {
   @apply hidden;
+}
+
+.coockiBaner {
+  @apply text-gray-900;
 }
 
 .coockiBaner a {

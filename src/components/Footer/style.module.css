@@ -27,11 +27,11 @@
 }
 
 .footer .copy {
-    @apply flex gap-2 justify-start text-white/70
+    @apply flex gap-2 justify-start text-white/70 flex-wrap;
 }
 
 .footer .copy em {
-    @apply flex-1 text-right;
+    @apply flex-1 text-left md:text-right;
 }
 
 .footer em a {

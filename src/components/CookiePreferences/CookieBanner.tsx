@@ -2,42 +2,33 @@
 
 import { Link } from "@/locales";
 import { useTranslations } from "next-intl";
-import cm from 'classnames';
-
+import CookieConsent from "./coocki.service";
 import style from './coocki.module.css';
-import { useEffect, useState } from "react";
+import { useMemo, useState } from "react";
 
 type TCookieConsent = 'granted' | 'denied';
 
-export default function CookieBanner() {
-  const [cookieConsent, setCookieConsent] = useState<TCookieConsent>('denied');
-  const t = useTranslations('cookie-banner');
-
-  const handeleAllow = () => {
-    setCookieConsent('granted');
-    localStorage.setItem('cookie_consent', 'granted');
-  };
+export default function CookieBanner(
+  { onHide = Function.prototype as () => void }:
+  { onHide?: () => void }
+) {
+  const t = useTranslations('cookie-preferences');
+  const cc = useMemo(() => CookieConsent.init(), []);
 
   const handleDecline = () => {
-    setCookieConsent('denied');
-    localStorage.setItem('cookie_consent', 'denied');
+    cc.rejectAll();
+    cc.applyUpdate();
+    onHide();
   };
 
-  useEffect(() => {
-    if (window.gtag && cookieConsent) {
-      window.gtag("consent", "update", {
-        analytics_storage: cookieConsent,
-      });
-    }
-  }, [cookieConsent]);
-
-  useEffect(() => {
-    const value = localStorage.getItem('cookie_consent') as TCookieConsent|null;
-    setCookieConsent(value);
-  }, []);
+  const handeleAllow = () => {
+    cc.acceptAll();
+    cc.applyUpdate();
+    onHide();
+  }
 
   return (
-    <section className={cm(style.coockiBaner, { [style.hide]: cookieConsent })}>
+    <section className={style.coockiBaner}>
       <article>
         {t.rich(
           'content',
@@ -45,8 +36,8 @@ export default function CookieBanner() {
         )}
       </article>
       <p className={style.bootons}>
-        <button onClick={handleDecline} className={style.btn} type="button">{t('Decline')}</button>
-        <button onClick={handeleAllow} className={cm(style.btn, style.btnPrimary)} type="button">{t('Allow Cookies')}</button>
+        <button onClick={handleDecline} className={ style.btn } type="button">{t('Decline')}</button>
+        <button onClick={handeleAllow} className={ style.btn } type="button">{t('Allow Cookies')}</button>
       </p>
     </section>
   )
