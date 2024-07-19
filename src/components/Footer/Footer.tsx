@@ -87,7 +87,7 @@ const Footer = () => {
                 <CookiePreferences />
               </NextIntlClientProvider>
               <em className="text-gray-400 text-nowrap">
-                {t('Devloped by')}&nbsp;
+                {t('Developed by')}&nbsp;
                 <Link target="_blank"  href={"https://www.linkedin.com/in/azhyburtovich/"}>Aliaksandr Zhyburtovich</Link>
                 &nbsp;v{version}
               </em>
