@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         languages: {
           ru: `${host}/ru`,
           en: `${host}/en`,
+          pl: `${host}/pl`,
         },
       },
     },
@@ -25,6 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         languages: {
           ru: `${host}/ru/privacy`,
           en: `${host}/en/privacy`,
+          pl: `${host}/pl/privacy`,
         },
       },
     }

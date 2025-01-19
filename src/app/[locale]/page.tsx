@@ -30,17 +30,16 @@ export default function Home() {
 
             <article className={style.aboutArticalItem}>
               <div className="title">
-                <h2>{t('Our professionals')}</h2>
+                <h2>{t('Our Mission')}</h2>
               </div>
 
               <ul>
-                <Li>{t('Manager of Perfume and Cosmetics Export')}</Li>
-                <Li>{t('Manager of Medical and Pharmaceutical Export')}</Li>
-                <Li>{t('Customs Agent')}</Li>
-                <Li>{t('Expert in Registration and Certification')}</Li>
-                <Li>{t('Export Legal Counsel')}</Li>
-                <Li>{t('Marketing and Analytics Specialist')}</Li>
-                <Li>{t('Logistics Expeditor')}</Li>
+                <Li>{t('We work only with trusted companies')}</Li>
+                <Li>{t('We deal exclusively with high-quality products')}</Li>
+                <Li>{t('We operate with honesty and transparency')}</Li>
+                <Li>{t('We collaborate only with companies that have a demand in selected markets')}</Li>
+                <Li>{t('We select partners and counterparties for long-term cooperation only')}</Li>
+                <Li>{t('We conduct business within the legal framework of the chosen country')}</Li>
               </ul>
             </article>
 
