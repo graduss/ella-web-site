@@ -19,6 +19,12 @@ const menuData: Menu[] = [
     title: "Contacts",
     newTab: false,
     path: "/#contacts"
-  }
+  },
+  {
+    id: 3,
+    title: "Our Partners",
+    newTab: false,
+    path: "/#partners"
+  },
 ];
 export default menuData;

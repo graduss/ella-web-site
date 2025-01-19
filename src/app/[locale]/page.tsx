@@ -168,6 +168,12 @@ export default function Home() {
 
           <Contacts className="mt-8" />
         </section>
+
+        <section className={style.partners}>
+          <div id="partners" className="title">
+            <h2>{t('Our Partners')}</h2>
+          </div>
+        </section>
       </main>
     </>
   );
