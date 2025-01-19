@@ -1,10 +1,10 @@
 .headerWrap {
-    @apply absolute left-0 top-0 z-40 flex w-full items-center;
+    @apply fixed z-[1] left-0 top-0 z-40 flex w-full items-center;
     @apply bg-gradient-to-b from-primary to-primary/0
 }
 
 .sticky {
-    @apply fixed z-[1] bg-primary !bg-opacity-85 shadow-sticky backdrop-blur-sm transition;
+    @apply bg-primary !bg-opacity-85 shadow-sticky backdrop-blur-sm transition;
 }
 
 .navWrap {
