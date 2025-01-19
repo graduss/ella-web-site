@@ -1,19 +1,27 @@
 {
   "privacy": {
-    "title": "Privacy Policy",
-    "link": "Privacy Policy"
+    "title": "Polityka prywatności",
+    "link": "Polityka prywatności"
   },
 
   "meta": {
-    "ConstMax_desc": "ConstMax is a professional B2B platform",
-    "title-privacy": "Privacy Policy | ConstMax"
+    "ConstMax_desc": "ConstMax to profesjonalna platforma B2B",
+    "title-privacy": "Polityka prywatności | ConstMax"
   },
 
   "home": {
-    "About": "About",
-    "ConstMax_desc": "ConstMax is a professional B2B platform for developing export business, between Western and Eastern Europe.",
-    "15_years": "<s>ConstMax specialists have been successfully working for over 15 years</s> in the export business. We have united and created a community of professionals in our field. Our team will perform their work at a high level for your business growth.",
+    "About": "O nas",
+    "ConstMax_desc": "ConstMax to profesjonalna platforma B2B wspierająca rozwój biznesu eksportowego pomiędzy Europą Zachodnią i Wschodnią.",
+    "15_years": "<s>Specjaliści ConstMax od ponad 15 lat z sukcesem zajmują się biznesem eksportowym.</s> Połączyliśmy siły, tworząc społeczność profesjonalistów w swojej dziedzinie. Nasz zespół wykona swoją pracę na najwyższym poziomie, zapewniając Państwu spokój i rozwój biznesu.",
 
+    "Our Mission": "Nasza Misja:",
+    "We work only with trusted companies": "Współpracujemy wyłącznie ze sprawdzonymi firmami.",
+    "We deal exclusively with high-quality products": "Pracujemy tylko z produktami najwyższej jakości.",
+    "We operate with honesty and transparency": "Działamy uczciwie i przejrzyście.",
+    "We collaborate only with companies that have a demand in selected markets": "Współpracujemy wyłącznie z firmami, które są potrzebne na wybranych rynkach.",
+    "We select partners and counterparties for long-term cooperation only": "Wybieramy partnerów i kontrahentów wyłącznie do długoterminowej współpracy.",
+    "We conduct business within the legal framework of the chosen country": "Prowadzimy działalność zgodnie z prawem, na terenie wybranego kraju.",
+    
     "Our professionals" : "Our professionals:",
     "Manager of Perfume and Cosmetics Export": "Manager of Perfume and Cosmetics Export",
     "Manager of Medical and Pharmaceutical Export": "Manager of Medical and Pharmaceutical Export",
@@ -23,65 +31,66 @@
     "Marketing and Analytics Specialist": "Marketing and Analytics Specialist",
     "Logistics Expeditor": "Logistics Expeditor",
 
-    "Why us": "Why us:",
-    "Quick Product Category Search": "Quick Product Category Search",
-    "Negotiation Conduct on Your Terms": "Negotiation Conduct on Your Terms",
-    "Negotiating in the Native Speakers Language": "Negotiating in the Native Speaker's Language",
-    "Document Preparation": "Document Preparation",
-    "Finding a Logistics Company at a Competitive Price": "Finding a Logistics Company at a Competitive Price",
-    "Supply Monitoring at All Stages": "Supply Monitoring at All Stages",
-    "Certification and Registration Conduct": "Certification and Registration Conduct",
+    "Why us": "Dlaczego my:",
+    "Quick Product Category Search": "Bogate doświadczenie: współpracujemy z wiodącymi firmami z Unii Euroazjatyckiej, Uzbekistanu, Gruzji i Azerbejdżanu.",
+    "Negotiation Conduct on Your Terms": "Zajmujemy się poszukiwaniem partnerów, prowadzimy negocjacje i zawieramy umowy.",
+    "Negotiating in the Native Speakers Language": "Wspieramy biznes na wszystkich etapach: od rejestracji po sprzedaż.",
+    "Document Preparation": "Dobierzemy firmę logistyczną z najbardziej korzystnymi stawkami.",
+    "Finding a Logistics Company at a Competitive Price": "Przygotowujemy wszystkie niezbędne dokumenty do odprawy celnej.",
+    "Supply Monitoring at All Stages": "Znamy niuanse prowadzenia biznesu i jesteśmy na nie przygotowani.",
+    "Certification and Registration Conduct": "Certyfikacja i rejestracja",
 
-    "Business Model": "Business Model:",
-    "Signing a contract": "Signing a contract",
-    "Based on your request, we will prepare a preliminary proposal for you": "Based on your request, we will prepare a preliminary proposal for you",
-    "Conducting Negotiations": "Conducting Negotiations",
-    "Agreement on Collaboration Terms": "Agreement on Collaboration Terms",
-    "Arranging Transport Services": "Arranging Transport Services",
-    "Quality and Delivery Monitoring": "Quality and Delivery Monitoring",
+    "Business Model": "Nasze Osiągnięcia:",
+    "Signing a contract": "Nasza firma jest młoda, ale mamy wiele powodów do dumy.",
+    "Based on your request, we will prepare a preliminary proposal for you": "Średnio zawieramy 15 kontraktów miesięcznie dla naszych partnerów.",
+    "Conducting Negotiations": "Ponad 40 aktywnych kontraktów z największymi firmami z Białorusi, Uzbekistanu i Armenii.",
+    "Agreement on Collaboration Terms": "Ponad 300 000 euro zaoszczędzono na rejestracji i certyfikacji.",
+    "Arranging Transport Services": "Przeprowadziliśmy rejestrację dla dziewięciu nowych marek.",
+    "Quality and Delivery Monitoring": "Aktywnie rozwijamy się, aby budować wzajemnie korzystne relacje biznesowe.",
 
-    "Direction": "Direction",
-    "Product Category Search": "Product Category Search",
-    "Cosmetics": "Cosmetics",
-    "Perfumery": "Perfumery",
-    "CTM": "CTM",
+    "Direction": "Kierunek",
+    "Product Category Search": "Wyszukiwanie kategorii produktów",
+    "Cosmetics": "Kosmetyka",
+    "Perfumery": "Perfumeria",
+    "CTM": "Мarki własne",
 
-    "Medical Equipment": "Medical Equipment",
-    "Medicinal Products": "Medicinal Products",
-    "Aesthetic Medicine": "Aesthetic Medicine",
-    "Biologically Active Supplements (BAS)": "Biologically Active Supplements (BAS)",
+    "Medical Equipment": "Wyroby medyczne",
+    "Medicinal Products": "Produkty lecznicze",
+    "Aesthetic Medicine": "Medycyna estetyczna",
+    "Biologically Active Supplements (BAS)": "Suplementy aktywne biologicznie",
 
-    "Category Product Analysis": "Category Product Analysis",
-    "Business Model for the Selected Product Category": "Business Model for the Selected Product Category",
-    "Manufacturer Market Sales History": "Manufacturer Market Sales History",
-    "ABC Analysis of Product Category": "ABC Analysis of Product Category",
-    "Sales Strategy": "Sales Strategy",
+    "Category Product Analysis": "Analizy według kategorii produktów",
+    "Business Model for the Selected Product Category": "Model biznesowy dla wybranej kategorii produktów",
+    "Manufacturer Market Sales History": "Historia sprzedaży na rynku producenta",
+    "ABC Analysis of Product Category": "Analiza ABC kategorii produktu",
+    "Sales Strategy": "Strategia sprzedaży",
 
-    "Registration and Certification": "Registration and Certification",
-    "Application Submission with a Package of Supporting Documents": "Application Submission with a Package of Supporting Documents",
-    "Preparation of Payment Documentation": "Preparation of Payment Documentation",
-    "Selection of Product Samples for Laboratory Testing": "Selection of Product Samples for Laboratory Testing",
-    "Conducting Laboratory Tests": "Conducting Laboratory Tests",
-    "Production Analysis of Product Line Certification": "Production Analysis of Product Line Certification",
-    "Certificate Issuance": "Certificate Issuance",
+    "Registration and Certification": "Rejestracja i Certyfikacja",
+    "Application Submission with a Package of Supporting Documents": "Przeprowadzenie rejestracji wyrobów medycznych w systemie uproszczonym",
+    "Preparation of Payment Documentation": "Przygotowanie dokumentów do rejestracji, najbardziej korzystny proces",
+    "Selection of Product Samples for Laboratory Testing": "Przygotowanie dokumentów do odprawy celnej, kod CN",
+    "Conducting Laboratory Tests": "Przeprowadzenie badań laboratoryjnych",
+    "Production Analysis of Product Line Certification": "Wybór najbardziej korzystnego procesu rejestracji",
+    "Certificate Issuance": "Rejestracja wyrobów medycznych w Unii Euroazjatyckiej",
 
-    "Logistics": "Logistics",
-    "Search for a Transportation Company in the Chosen Direction": "Search for a Transportation Company in the Chosen Direction",
-    "LCL (Less than Container Load) Proposal": "LCL (Less than Container Load) Proposal",
-    "Logistics Cost Calculation": "Logistics Cost Calculation",
+    "Logistics": "Logistyka",
+    "Search for a Transportation Company in the Chosen Direction": "Poszukiwanie firmy transportowej w wybranym kierunku",
+    "LCL (Less than Container Load) Proposal": "Oferta przesyłek masowych",
+    "Logistics Cost Calculation": "Kalkulacja kosztów logistycznych",
 
-    "Documents": "Documents",
-    "Export Invoice": "Export Invoice",
-    "Customs Declaration": "Customs Declaration",
-    "MSDS": "MSDS",
-    "Our Contact Information": "Our Contact Information",
-    "Tax ID Number": "Tax ID Number"
+    "Documents": "Dokumenty",
+    "Export Invoice": "List przewozowy eksportowy",
+    "Customs Declaration": "Deklaracja celna",
+    "MSDS": "Karta charakterystyki substancji niebezpiecznej (SDS)",
+
+    "Our Contact Information": "Nasze dane kontaktowe",
+    "Tax ID Number": "NIP"
   },
 
   "cookie-preferences": {
-    "Cookie Preferences": "Cookie Preferences",
-    "content": "This website uses cookies to enhance your browsing experience, analyze site traffic, and serve better user experiences. By continuing to use this site, you consent to our use of cookies. Learn more in our <link>Privacy Policy</link>",
-    "Decline": "Reject all cookies",
-    "Allow Cookies": "Accept all cookies"
+    "Cookie Preferences": "Ustawienia plików cookie",
+    "content": "Ta strona internetowa używa plików cookie, aby ulepszyć Twoje wrażenia z przeglądania, analizować ruch w witrynie i zapewniać lepsze doświadczenia użytkowników. Kontynuując korzystanie z tej witryny, wyrażasz zgodę na używanie przez nas plików cookie. Dowiedz się więcej w naszym <link>Polityka prywatności</link>",
+    "Decline": "Odrzucić",
+    "Allow Cookies": "Zezwalaj na pliki cookie"
   }
 }

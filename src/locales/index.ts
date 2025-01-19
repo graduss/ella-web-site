@@ -12,10 +12,11 @@ export type TLocaleOption = {
 export const LocaleOptions: TLocaleOption[] = [
     { value: 'en', label: 'English' },
     { value: 'ru', label: 'Russian' },
+    { value: 'pl', label: 'Polska' },
 ];
 
 export const LocaleConfig = {
-    locales: ["ru", "en"],
+    locales: ["ru", "en", "pl"],
     defaultLocale: "en",
 }
 

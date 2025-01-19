@@ -1,14 +1,14 @@
 {
-    "Home": "Home",
-    "About": "About",
-    "Services": "Direction",
-    "Contacts": "Contacts",
+    "Home": "Główna",
+    "About": "O nas",
+    "Services": "Kierunki",
+    "Contacts": "Kontakty",
 
-    "Search for a product category": "Product Category Search",
-    "Marketing analytics": "Marketing and Analytics Specialist",
-    "Logistics": "Logistics",
-    "Registration certification": "Registration and Certification",
-    "Documentation": "Documents",
+    "Search for a product category": "Wyszukiwanie kategorii produktów",
+    "Marketing analytics": "Specjalista ds. marketingu i analityki",
+    "Logistics": "Logistyka",
+    "Registration certification": "Rejestracja i Certyfikacja",
+    "Documentation": "Dokumenty",
 
     "Developed by": "Developed by"
 }
