@@ -1,0 +1,23 @@
+.partners {
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  gap: 2rem;
+  max-height: calc(12rem * 5 - 2rem);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item {
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+
+  .image {
+    width: 10rem;
+  }
+}
