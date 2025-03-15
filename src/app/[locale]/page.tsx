@@ -8,6 +8,7 @@ import Contacts from "@/components/Contacts/Contacts";
 import ServiceList from "@/components/servicies/ServicieList";
 
 import style from "./style.module.css";
+import OurPartners from "@/components/OurPartners/OurPartners";
 
 export default function Home() {
   const t = useTranslations('home');
@@ -158,12 +159,19 @@ export default function Home() {
           </article>
         </section>
 
+        <section className={style.partners}>
+          <div id="partners" className="title">
+            <h2>{t('Our Partners')}</h2>
+          </div>
+          <OurPartners />
+        </section>
+
         <section className={style.contacts}>
           <div id="contacts" className="title">
             <h2>{t('Our Contact Information')}</h2>
           </div>
 
-          <MapSection address="ul. Szosa Chełmińska 105, 87-100 Toruń, Polska" />
+          <MapSection address="Szosa Chełmińska 103b,87-100 Toruń,Polska" />
 
           <Contacts className="mt-8" />
         </section>
