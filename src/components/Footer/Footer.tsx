@@ -9,7 +9,6 @@ import style from "./style.module.css";
 import Logo from "../Logo/Logo";
 import Contacts from "../Contacts/Contacts";
 import CookiePreferences from "../CookiePreferences/CookiePreferences";
-import { pick } from "lodash";
 
 type TLinksSection = {
   className?: string;
@@ -83,9 +82,7 @@ const Footer = () => {
           <div className="py-8">
             <div className={style.copy}>
               <span>&copy; ConstMax 2024.</span>
-              <NextIntlClientProvider messages={pick(messages, 'cookie-preferences')}>
-                <CookiePreferences />
-              </NextIntlClientProvider>
+              <CookiePreferences />
               <em className="text-gray-400 text-nowrap">
                 {t('Developed by')}&nbsp;
                 <Link target="_blank"  href={"https://www.linkedin.com/in/azhyburtovich/"}>Aliaksandr Zhyburtovich</Link>

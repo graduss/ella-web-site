@@ -2,7 +2,6 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Roboto, Playfair_Display } from 'next/font/google';
 import { GoogleAnalytics } from '@next/third-parties/google';
-import pick from 'lodash/pick';
 
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
