@@ -1,7 +1,16 @@
 {
   "name": "ella-web-site",
   "version": "0.10.0",
+  "description": "ConstMax — logistics expeditor website",
+  "author": "Sasha <graduss@tut.by>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/graduss/ella-web-site.git"
+  },
   "private": true,
+  "engines": {
+    "node": ">=24.15.0"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build && node -e \"require('fs').writeFileSync('out/index.html', '<!DOCTYPE html><html lang=\\\"en\\\"><head><meta charset=\\\"utf-8\\\"><title>ConstMax</title><meta http-equiv=\\\"refresh\\\" content=\\\"0;url=/en\\\"></head><body><script>window.location.replace(\\\"/en\\\")<\\/script></body></html>')\"",
