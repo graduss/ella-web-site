@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Link } from "@/locales";
+import { Link } from "@/i18n/navigation";
 import { NextIntlClientProvider, useMessages, useTranslations } from "next-intl";
 
 import { TFLinks, usefulLinks } from './footerMenuData';

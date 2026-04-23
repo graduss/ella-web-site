@@ -8,7 +8,7 @@ import { redirect } from 'next/navigation';
 
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
-import { LocaleConfig } from "@/locales";
+import { LocaleConfig } from "@/i18n";
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
@@ -41,9 +41,18 @@ import "@/styles/index.css";
 
 
 const roboto = Roboto({ weight: ["700", "400", "500"], style: ["normal", "italic"], subsets: ["latin"] });
-const playfairDisplay = Playfair_Display({ subsets: ["latin"], weight: ["400", "500"], variable: "--playfair-display" })
+const playfairDisplay = Playfair_Display({ subsets: ["latin"], weight: ["400", "500"], variable: "--playfair-display" });
 
-export async function generateMetadata({params: {locale}}) {
+export function generateStaticParams() {
+  return [
+    { locale: 'ru' },
+    { locale: 'en' },
+    { locale: 'pl' },
+  ];
+}
+
+export async function generateMetadata({params}: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
   const t = await getTranslations({locale, namespace: 'meta'});
 
   return {
@@ -52,37 +61,40 @@ export async function generateMetadata({params: {locale}}) {
   }
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
-  params: {locale}
+  params
 }: {
   children: React.ReactNode;
-  params: { locale: string }
+  params: Promise<{ locale: string }>
 }) {
+  const { locale } = await params;
+
   if (!LocaleConfig.locales.includes(locale)) {
     redirect(`/${LocaleConfig.defaultLocale}`)
   }
 
-  const messages = useMessages();
+  // const messages = await getTranslations({ locale });
 
   return (  
     <html lang={locale}>
       <head />
         <body className={`${roboto.className} ${playfairDisplay.variable}`}>
-          <NextIntlClientProvider messages={pick(messages, 'header')}>
+          <NextIntlClientProvider>
             <Header />
-          </NextIntlClientProvider>
+          
           
 
-          <div className="content-bg">
-            <div className="content-wrap">
-              <div className="container">
-                {children}
+            <div className="content-bg">
+              <div className="content-wrap">
+                <div className="container">
+                  {children}
+                </div>
               </div>
             </div>
-          </div>
-            
-          <Footer />
+              
+            <Footer />
+          </NextIntlClientProvider>
         </body>
         { process.env.GOOGLE_ID && <GoogleAnalytics gaId={process.env.GOOGLE_ID} /> }
     </html>

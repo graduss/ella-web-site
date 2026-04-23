@@ -94,5 +94,22 @@
     "content": "Ta strona internetowa używa plików cookie, aby ulepszyć Twoje wrażenia z przeglądania, analizować ruch w witrynie i zapewniać lepsze doświadczenia użytkowników. Kontynuując korzystanie z tej witryny, wyrażasz zgodę na używanie przez nas plików cookie. Dowiedz się więcej w naszym <link>Polityka prywatności</link>",
     "Decline": "Odrzucić",
     "Allow Cookies": "Zezwalaj na pliki cookie"
+  },
+
+  "header": {
+    "Home": "Główna",
+    "About": "O nas",
+    "Services": "Kierunki",
+    "Contacts": "Kontakty",
+
+    "Search for a product category": "Wyszukiwanie kategorii produktów",
+    "Marketing analytics": "Specjalista ds. marketingu i analityki",
+    "Logistics": "Logistyka",
+    "Registration certification": "Rejestracja i Certyfikacja",
+    "Documentation": "Dokumenty",
+
+    "Developed by": "Opracowane przez",
+
+    "Our Partners": "Nasi partnerzy"
   }
 }

@@ -93,5 +93,22 @@
     "content": "This website uses cookies to enhance your browsing experience, analyze site traffic, and serve better user experiences. By continuing to use this site, you consent to our use of cookies. Learn more in our <link>Privacy Policy</link>",
     "Decline": "Reject all cookies",
     "Allow Cookies": "Accept all cookies"
+  },
+
+  "header": {
+    "Home": "Home",
+    "About": "About",
+    "Services": "Direction",
+    "Contacts": "Contacts",
+
+    "Search for a product category": "Product Category Search",
+    "Marketing analytics": "Marketing and Analytics Specialist",
+    "Logistics": "Logistics",
+    "Registration certification": "Registration and Certification",
+    "Documentation": "Documents",
+
+    "Developed by": "Developed by",
+
+    "Our Partners": "Our Partners"
   }
 }

@@ -1,9 +1,7 @@
-import { TLinkHref } from "@/locales";
-
-export type TServiseItem = {
+    export type TServiseItem = {
     id: number;
     title: string;
-    path:  TLinkHref;
+    path:  string;
     icon: string;
 };
 

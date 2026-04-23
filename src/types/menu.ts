@@ -1,9 +1,7 @@
-import { TLinkHref } from "@/locales";
-
 export type Menu = {
   id: number;
   title: string;
-  path?: TLinkHref;
+  path?: string;
   newTab: boolean;
   submenu?: Menu[];
 };

@@ -1,6 +1,6 @@
 'use client';
 
-import { Link } from "@/locales";
+import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import CookieConsent from "./coocki.service";
 import style from './coocki.module.css';

@@ -8,12 +8,12 @@ type TProps = {
   className?: string,
 };
 
-const Li:FC<TProps> = ({children, icon, className}) => (
-  <li className={className}><FontAwesomeIcon icon={ icon } /> {children}</li>
-);
-
-Li.defaultProps = {
-  icon: "fa-solid fa-circle-check" as IconProp
+export default function Li({
+  children,
+  icon = "fa-solid fa-circle-check" as IconProp,
+  className
+}: TProps) {
+  return (
+    <li className={className}><FontAwesomeIcon icon={ icon } /> {children}</li>
+  );
 }
-
-export default Li;

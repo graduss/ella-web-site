@@ -1,6 +1,8 @@
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
+
 export type Feature = {
   id: number;
-  icon: JSX.Element;
+  icon: IconProp;
   title: string;
   paragraph: string;
 };

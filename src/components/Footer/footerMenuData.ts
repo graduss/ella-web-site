@@ -1,10 +1,9 @@
-import { TLinkHref } from "@/locales";
 import { serviceLirt } from "@/servicies";
 
 export type TFLinks = {
     id: number
     label: string;
-    href: TLinkHref;
+    href: string;
 };
 
 export const usefulLinks:TFLinks[] = serviceLirt.map(item => ({

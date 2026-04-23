@@ -1,7 +1,8 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
 import { useParams } from 'next/navigation';
-import { LocaleOptions, TLocaleOption, usePathname, useRouter } from '@/locales';
+import { LocaleOptions, TLocaleOption } from '@/i18n';
+import { usePathname, useRouter } from "@/i18n/navigation";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGlobe, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import cm from 'classnames';

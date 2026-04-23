@@ -1,7 +1,7 @@
 import { PrivacyRU, Privacy } from "@/components/Privacy";
 import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
-import { LocaleConfig } from "@/locales"
+import { LocaleConfig } from "@/i18n";
 
 export async function generateMetadata({params: {locale}}) {
   const t = await getTranslations({locale, namespace: 'meta'});

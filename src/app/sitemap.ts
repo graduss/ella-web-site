@@ -1,3 +1,4 @@
+export const dynamic = 'force-static';
 import { MetadataRoute } from 'next';
 
 const host = "https://const-max.com";

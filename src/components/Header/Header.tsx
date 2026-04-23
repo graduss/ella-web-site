@@ -1,5 +1,5 @@
 "use client";
-import { Link } from "@/locales";
+import { Link } from "@/i18n/navigation";
 import { usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";

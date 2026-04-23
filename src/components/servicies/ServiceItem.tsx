@@ -1,5 +1,5 @@
 import { TServiseItem } from "@/servicies";
-import { Link } from "@/locales";
+import { Link } from "@/i18n/navigation";
 import { FC } from "react";
 import { useTranslations } from "next-intl";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
