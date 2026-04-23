@@ -87,7 +87,7 @@ export default async function RootLayout({
             <Footer />
           </NextIntlClientProvider>
         </body>
-        { process.env.GOOGLE_ID && <GoogleAnalytics gaId={process.env.GOOGLE_ID} /> }
+        { process.env.NEXT_PUBLIC_GOOGLE_ID && <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GOOGLE_ID} /> }
     </html>
   );
 }
