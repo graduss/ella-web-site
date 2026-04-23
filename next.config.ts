@@ -3,20 +3,7 @@ import createNextIntlPlugin from 'next-intl/plugin';
 
 const nextConfig: NextConfig = {
   images: {
-    remotePatterns: [
-      {
-        protocol: "http",
-        hostname: "localhost",
-        port: "",
-      },
-    ],
-    // remotePatterns: [
-    //   {
-    //     protocol: "https",
-    //     hostname: "cdn.sanity.io",
-    //     port: "",
-    //   },
-    // ],
+    unoptimized: true,
   },
   output: "export",
 };

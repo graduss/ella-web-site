@@ -1,14 +1,11 @@
-import { NextIntlClientProvider, useMessages } from 'next-intl';
-import { getTranslations } from 'next-intl/server';
+import { NextIntlClientProvider } from 'next-intl';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Roboto, Playfair_Display } from 'next/font/google';
 import { GoogleAnalytics } from '@next/third-parties/google';
 import pick from 'lodash/pick';
 
-import { redirect } from 'next/navigation';
-
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
-import { LocaleConfig } from "@/i18n";
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
@@ -69,14 +66,9 @@ export default async function RootLayout({
   params: Promise<{ locale: string }>
 }) {
   const { locale } = await params;
+  setRequestLocale(locale);
 
-  if (!LocaleConfig.locales.includes(locale)) {
-    redirect(`/${LocaleConfig.defaultLocale}`)
-  }
-
-  // const messages = await getTranslations({ locale });
-
-  return (  
+  return (
     <html lang={locale}>
       <head />
         <body className={`${roboto.className} ${playfairDisplay.variable}`}>

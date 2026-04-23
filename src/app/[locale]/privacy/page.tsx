@@ -1,10 +1,12 @@
 import { PrivacyRU, Privacy } from "@/components/Privacy";
-import { useTranslations } from "next-intl";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { LocaleConfig } from "@/i18n";
 
-export async function generateMetadata({params: {locale}}) {
-  const t = await getTranslations({locale, namespace: 'meta'});
+type TParams = { params: Promise<{ locale: typeof LocaleConfig.locales[number] }> };
+
+export async function generateMetadata({ params }: TParams) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'meta' });
 
   return {
     title: t('title-privacy'),
@@ -12,12 +14,10 @@ export async function generateMetadata({params: {locale}}) {
   }
 }
 
-type TPrivacyPage = {
-  params: { locale: typeof LocaleConfig.locales[number] }
-};
-
-export default function PrivacyPage ({params: {locale}}: TPrivacyPage) {
-  const t = useTranslations('privacy');
+export default async function PrivacyPage({ params }: TParams) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: 'privacy' });
 
   return (<>
     <div className="pageTitle">

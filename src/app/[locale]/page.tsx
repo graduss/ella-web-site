@@ -1,17 +1,19 @@
-import { useTranslations } from "next-intl";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { Li } from "@/components/Common";
 import MapSection from "@/components/MapSection/MapSection";
 import Contacts from "@/components/Contacts/Contacts";
-
-
 import ServiceList from "@/components/servicies/ServicieList";
-
-import style from "./style.module.css";
 import OurPartners from "@/components/OurPartners/OurPartners";
 
-export default function Home() {
-  const t = useTranslations('home');
+import style from "./style.module.css";
+
+type TParams = { params: Promise<{ locale: string }> };
+
+export default async function Home({ params }: TParams) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: 'home' });
 
   return (
     <>
@@ -78,7 +80,7 @@ export default function Home() {
 
           </section>
         </section>
-        
+
         <section>
           <div className="title">
             <h2>{t('Direction')}</h2>
